@@ -9,7 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "Aftership.h"
 #import "RXPromise.h"
-
+#import "AftershipTestClientUtils.h"
 
 
 @interface CourierRequestsTests : XCTestCase
@@ -22,8 +22,8 @@
 
   [super setUp];
   // Put setup code here. This method is called before the invocation of each test method in the class.
-  self.client = [AftershipClient clientWithApiKey:@"88cec19d-b36f-4ec1-8fb1-e8ee811f9343"];
-  self.client.baseUrl = @"http://localhost:3001/v4/";
+  self.client = [AftershipTestClientUtils client];
+
 }
 
 - (void)tearDown {

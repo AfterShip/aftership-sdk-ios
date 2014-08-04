@@ -5,6 +5,7 @@
 #import <XCTest/XCTest.h>
 #import "Aftership.h"
 #import "RXPromise.h"
+#import "AftershipTestClientUtils.h"
 
 @interface LastCheckpointRequestTests : XCTestCase
 @property(strong) AftershipClient *client;
@@ -15,7 +16,7 @@
 
 - (void)setUp {
   [super setUp];
-  self.client = [AftershipClient clientWithApiKey:@"88cec19d-b36f-4ec1-8fb1-e8ee811f9343"];
+  self.client = [AftershipTestClientUtils client];
   //use mocking http response, only verify connection and object mapping
   self.client.baseUrl = @"http://www.mocky.io/v2/53df3f7a3a67abe70e4b5a17";
 }
