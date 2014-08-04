@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16645D44198F3092006F1F39 /* CourierRequestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF418FA8503261FD9D5E1 /* CourierRequestsTests.m */; };
+		16645D45198F3096006F1F39 /* NotificationRequestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABFD35A323A2B6430CC156 /* NotificationRequestsTests.m */; };
+		16645D46198F79F4006F1F39 /* TrackingRequestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF0ADCF71435C8F1AA0C6 /* TrackingRequestsTests.m */; };
+		16645D47198F79F7006F1F39 /* LastCheckpointRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF9C0D03BC5431CF5E3D5 /* LastCheckpointRequestTest.m */; };
+		5FCA4A82026944DDB86EA35B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC14602013C4F17BC160B19 /* libPods.a */; };
+		FFABF0428E036B6B924F8545 /* AftershipError.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF0272B16871250382D05 /* AftershipError.m */; };
+		FFABF0BCCEB0EC90BF7014D8 /* AftershipRetrackTrackingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABFEE733E2A61F1F85A21A /* AftershipRetrackTrackingRequest.m */; };
+		FFABF0CE4A633EC09897A27B /* AftershipGetUserCouriersRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF717ED4D63F325684B58 /* AftershipGetUserCouriersRequest.m */; };
+		FFABF0CF801F81181A6668F9 /* AftershipTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF00285A571655D954DA7 /* AftershipTracking.m */; };
+		FFABF0D6EC55321B6FF96C26 /* AftershipAbstractRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF3D6F8DBB64D88A5688C /* AftershipAbstractRequest.m */; };
+		FFABF1136C910DE32E97FB59 /* AftershipAddNotificationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABFA32826DE8347C628750 /* AftershipAddNotificationRequest.m */; };
+		FFABF13D93A1700253E9A75B /* AftershipGetLastCheckpointRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF52010A60EB69526471F /* AftershipGetLastCheckpointRequest.m */; };
+		FFABF22E615D94765F4C38B7 /* AftershipGetTrackingsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF0D2D0BA2BD87D397830 /* AftershipGetTrackingsRequest.m */; };
+		FFABF2DF54278A8B27A9962E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFABFD1C5DDDC4C3FFC9EBBC /* UIKit.framework */; };
+		FFABF3652510FA0B1C5169AE /* AftershipDetectCourierRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF1EB5AB39E815FA24038 /* AftershipDetectCourierRequest.m */; };
+		FFABF3D3A98912922C13AAAC /* AftershipGetTrackingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF0174161CCD34C02DD10 /* AftershipGetTrackingRequest.m */; };
+		FFABF40363C7FD6BAB6EBF60 /* AftershipGetNotificationsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF0380C6DB6BC4EB2D0D2 /* AftershipGetNotificationsRequest.m */; };
+		FFABF43E9B2B0D0F534E86CF /* AftershipCheckpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABFAC2A0626E28F7F7F778 /* AftershipCheckpoint.m */; };
+		FFABF590E604426E3BC66842 /* AftershipDeleteTrackingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF332103000F8E8222B92 /* AftershipDeleteTrackingRequest.m */; };
+		FFABF62E77073D7678F3D6E9 /* AftershipConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABFC2FC6E5A784D28B820A /* AftershipConstants.m */; };
+		FFABF6564BE1017B56500071 /* AftershipGetLastCheckpointResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABFFFADD5013B65F73271F /* AftershipGetLastCheckpointResponse.m */; };
+		FFABF6BF92328A98E68B554F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFABF4221888B5030E10329E /* Foundation.framework */; };
+		FFABF6D557D9954BE94B4AC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFABF0B7F031B007297FC869 /* InfoPlist.strings */; };
+		FFABF70D9A594175477F088D /* AftershipAbstractSingleTrackingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABFC57A779FB4D3388426F /* AftershipAbstractSingleTrackingRequest.m */; };
+		FFABF88B8E375FEC87261116 /* AftershipGetAllCouriersRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF08C78E75C115AB87046 /* AftershipGetAllCouriersRequest.m */; };
+		FFABF9E8AF7D03C7A811168E /* libAftership-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFABF661E416CBB6B41AADA1 /* libAftership-iOS-SDK.a */; };
+		FFABFA5475269EFE317CE5F0 /* AftershipLogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF3C3A2932F5F6B5D5740 /* AftershipLogUtil.m */; };
+		FFABFB01788748FCED5D8E95 /* AftershipAbstractSingleNotificationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABFA97A4AA776F61C9B572 /* AftershipAbstractSingleNotificationRequest.m */; };
+		FFABFBF3F218048753855007 /* AftershipNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABFA9D0778011A811B7B61 /* AftershipNotification.m */; };
+		FFABFC6ACDFB0557784E88B1 /* AftershipClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF96C0ABE4F0E98C4BA52 /* AftershipClient.m */; };
+		FFABFC6C6D12879414CE40AE /* AftershipUpdateTrackingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF77CFBA1E9057618473B /* AftershipUpdateTrackingRequest.m */; };
+		FFABFCDE7B82A503F78407D9 /* AftershipMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF9E3401B0BE0D9A33577 /* AftershipMeta.m */; };
+		FFABFD4FA88B580A503901A0 /* AftershipCreateTrackingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF2ABE4124F6711BDCC6E /* AftershipCreateTrackingRequest.m */; };
+		FFABFD7BF7B5C568E89FEABD /* AftershipGetTrackingsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF24AF04147F129047536 /* AftershipGetTrackingsResponse.m */; };
+		FFABFD9DE85B5A07F80B02F2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFABFB3FB540699BFDCA04C6 /* XCTest.framework */; };
+		FFABFD9EED589B82BBD9F051 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFABF4221888B5030E10329E /* Foundation.framework */; };
+		FFABFECC0324A8CC6D03E80B /* AftershipAbstractSingleObjectOperationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF616BE7FE519B7228EF6 /* AftershipAbstractSingleObjectOperationRequest.m */; };
+		FFABFEDAD4784AA434CE1F20 /* AftershipGetCouriersResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABFCFBCB57E9F307997CD0 /* AftershipGetCouriersResponse.m */; };
+		FFABFF0AD3D059F06A705D71 /* AftershipCourier.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF5543AE7BC6C8767A6FD /* AftershipCourier.m */; };
+		FFABFF1DCE4EF6ECE370288A /* AftershipAbstractMultipleObjectsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF890F9E7490AF5B7B2F8 /* AftershipAbstractMultipleObjectsRequest.m */; };
+		FFABFF5835EF4A900BD5CF91 /* AftershipRemoveNotificationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF237B877C75F67A5463C /* AftershipRemoveNotificationRequest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFABFA22D9653F9CF70AB8F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFABFE6C18D9F1CFF4EE494C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFABF47B68E56AC05BF89204;
+			remoteInfo = "Aftership-iOS-SDK";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FFABF455B54BD37CB9C6744C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3035D770382949068CB8D063 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		EFC14602013C4F17BC160B19 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFABF00285A571655D954DA7 /* AftershipTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipTracking.m; sourceTree = "<group>"; };
+		FFABF0174161CCD34C02DD10 /* AftershipGetTrackingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipGetTrackingRequest.m; sourceTree = "<group>"; };
+		FFABF0272B16871250382D05 /* AftershipError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipError.m; sourceTree = "<group>"; };
+		FFABF0380C6DB6BC4EB2D0D2 /* AftershipGetNotificationsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipGetNotificationsRequest.m; sourceTree = "<group>"; };
+		FFABF047822793F629E5B7AE /* AftershipAbstractMultipleObjectsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipAbstractMultipleObjectsRequest.h; sourceTree = "<group>"; };
+		FFABF08C78E75C115AB87046 /* AftershipGetAllCouriersRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipGetAllCouriersRequest.m; sourceTree = "<group>"; };
+		FFABF09841625585637B385A /* AftershipGetUserCouriersRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipGetUserCouriersRequest.h; sourceTree = "<group>"; };
+		FFABF0ADCF71435C8F1AA0C6 /* TrackingRequestsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingRequestsTests.m; sourceTree = "<group>"; };
+		FFABF0D2D0BA2BD87D397830 /* AftershipGetTrackingsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipGetTrackingsRequest.m; sourceTree = "<group>"; };
+		FFABF10176FB5F87B9D6408D /* AftershipCourier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipCourier.h; sourceTree = "<group>"; };
+		FFABF1017EEC3CB7C401D60C /* AftershipAbstractSingleNotificationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipAbstractSingleNotificationRequest.h; sourceTree = "<group>"; };
+		FFABF149F5F5C36EA1758AAB /* Aftership-iOS-SDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "Aftership-iOS-SDKTests-Info.plist"; sourceTree = "<group>"; };
+		FFABF14C1EAF01FD8451E8DD /* AftershipAbstractRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipAbstractRequest.h; sourceTree = "<group>"; };
+		FFABF1EB5AB39E815FA24038 /* AftershipDetectCourierRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipDetectCourierRequest.m; sourceTree = "<group>"; };
+		FFABF237B877C75F67A5463C /* AftershipRemoveNotificationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipRemoveNotificationRequest.m; sourceTree = "<group>"; };
+		FFABF23F0297DAC464C00508 /* AftershipError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipError.h; sourceTree = "<group>"; };
+		FFABF24AF04147F129047536 /* AftershipGetTrackingsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipGetTrackingsResponse.m; sourceTree = "<group>"; };
+		FFABF27A8CF767D4ECBBCA6C /* AftershipGetTrackingsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipGetTrackingsRequest.h; sourceTree = "<group>"; };
+		FFABF2ABE4124F6711BDCC6E /* AftershipCreateTrackingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipCreateTrackingRequest.m; sourceTree = "<group>"; };
+		FFABF2C4229BCAEDA421C896 /* AftershipClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipClient.h; sourceTree = "<group>"; };
+		FFABF2C9AD80E0F075E048E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFABF2FC2560E5A4D7EA8FA2 /* AftershipRetrackTrackingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipRetrackTrackingRequest.h; sourceTree = "<group>"; };
+		FFABF332103000F8E8222B92 /* AftershipDeleteTrackingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipDeleteTrackingRequest.m; sourceTree = "<group>"; };
+		FFABF33FADB08C93D25624C0 /* AftershipAbstractSingleObjectOperationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipAbstractSingleObjectOperationRequest.h; sourceTree = "<group>"; };
+		FFABF3C3A2932F5F6B5D5740 /* AftershipLogUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipLogUtil.m; sourceTree = "<group>"; };
+		FFABF3D6F8DBB64D88A5688C /* AftershipAbstractRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipAbstractRequest.m; sourceTree = "<group>"; };
+		FFABF418FA8503261FD9D5E1 /* CourierRequestsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourierRequestsTests.m; sourceTree = "<group>"; };
+		FFABF4221888B5030E10329E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FFABF52010A60EB69526471F /* AftershipGetLastCheckpointRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipGetLastCheckpointRequest.m; sourceTree = "<group>"; };
+		FFABF5543AE7BC6C8767A6FD /* AftershipCourier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipCourier.m; sourceTree = "<group>"; };
+		FFABF5FD0073F0154023437D /* AftershipGetTrackingsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipGetTrackingsResponse.h; sourceTree = "<group>"; };
+		FFABF616BE7FE519B7228EF6 /* AftershipAbstractSingleObjectOperationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipAbstractSingleObjectOperationRequest.m; sourceTree = "<group>"; };
+		FFABF661E416CBB6B41AADA1 /* libAftership-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libAftership-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFABF6EE1CDB7075F56EFA7E /* AftershipGetNotificationsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipGetNotificationsRequest.h; sourceTree = "<group>"; };
+		FFABF6F0046FC81B28C48AFD /* AftershipAbstractSingleTrackingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipAbstractSingleTrackingRequest.h; sourceTree = "<group>"; };
+		FFABF717ED4D63F325684B58 /* AftershipGetUserCouriersRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipGetUserCouriersRequest.m; sourceTree = "<group>"; };
+		FFABF73B3C4192E53F224250 /* AftershipMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipMeta.h; sourceTree = "<group>"; };
+		FFABF77CFBA1E9057618473B /* AftershipUpdateTrackingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipUpdateTrackingRequest.m; sourceTree = "<group>"; };
+		FFABF834320F55F79F2C2270 /* Aftership-iOS-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aftership-iOS-SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFABF863CD5F79103F662B99 /* AftershipNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipNotification.h; sourceTree = "<group>"; };
+		FFABF890F9E7490AF5B7B2F8 /* AftershipAbstractMultipleObjectsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipAbstractMultipleObjectsRequest.m; sourceTree = "<group>"; };
+		FFABF8CB378F5CA6B7DB9C22 /* AftershipDeleteTrackingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipDeleteTrackingRequest.h; sourceTree = "<group>"; };
+		FFABF9525E8618610C4E0316 /* AftershipLogUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipLogUtil.h; sourceTree = "<group>"; };
+		FFABF96C0ABE4F0E98C4BA52 /* AftershipClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipClient.m; sourceTree = "<group>"; };
+		FFABF99717C624A95DC1EEC4 /* AftershipConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipConstants.h; sourceTree = "<group>"; };
+		FFABF9C0D03BC5431CF5E3D5 /* LastCheckpointRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastCheckpointRequestTest.m; sourceTree = "<group>"; };
+		FFABF9C2BDFE0231DC2ABE8F /* AftershipGetLastCheckpointResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipGetLastCheckpointResponse.h; sourceTree = "<group>"; };
+		FFABF9E3401B0BE0D9A33577 /* AftershipMeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipMeta.m; sourceTree = "<group>"; };
+		FFABFA32826DE8347C628750 /* AftershipAddNotificationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipAddNotificationRequest.m; sourceTree = "<group>"; };
+		FFABFA3B186E5CC180CF6FBD /* Aftership.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aftership.h; sourceTree = "<group>"; };
+		FFABFA5D6F33773C55734D11 /* AftershipDetectCourierRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipDetectCourierRequest.h; sourceTree = "<group>"; };
+		FFABFA97A4AA776F61C9B572 /* AftershipAbstractSingleNotificationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipAbstractSingleNotificationRequest.m; sourceTree = "<group>"; };
+		FFABFA9D0778011A811B7B61 /* AftershipNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipNotification.m; sourceTree = "<group>"; };
+		FFABFAAEE9A4FC6EC1765BC7 /* AftershipGetCouriersResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipGetCouriersResponse.h; sourceTree = "<group>"; };
+		FFABFAC2A0626E28F7F7F778 /* AftershipCheckpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipCheckpoint.m; sourceTree = "<group>"; };
+		FFABFB3FB540699BFDCA04C6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FFABFB4D55C9F1041346D335 /* AftershipCreateTrackingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipCreateTrackingRequest.h; sourceTree = "<group>"; };
+		FFABFB8D522C9DD3AC8E49B8 /* AftershipRemoveNotificationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipRemoveNotificationRequest.h; sourceTree = "<group>"; };
+		FFABFBEB7022EB8ACBD5EF8C /* Aftership-iOS-SDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Aftership-iOS-SDK-Prefix.pch"; sourceTree = "<group>"; };
+		FFABFC2FC6E5A784D28B820A /* AftershipConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipConstants.m; sourceTree = "<group>"; };
+		FFABFC57A779FB4D3388426F /* AftershipAbstractSingleTrackingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipAbstractSingleTrackingRequest.m; sourceTree = "<group>"; };
+		FFABFCFBCB57E9F307997CD0 /* AftershipGetCouriersResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipGetCouriersResponse.m; sourceTree = "<group>"; };
+		FFABFD1C5DDDC4C3FFC9EBBC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FFABFD35A323A2B6430CC156 /* NotificationRequestsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationRequestsTests.m; sourceTree = "<group>"; };
+		FFABFE0B685D2D24B8A0BE66 /* AftershipAddNotificationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipAddNotificationRequest.h; sourceTree = "<group>"; };
+		FFABFE1628FDC5E6FC8922FD /* AftershipGetLastCheckpointRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipGetLastCheckpointRequest.h; sourceTree = "<group>"; };
+		FFABFE652AC4E0C9511BBC25 /* AftershipGetTrackingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipGetTrackingRequest.h; sourceTree = "<group>"; };
+		FFABFECDADD9FA7F14525FDC /* AftershipUpdateTrackingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipUpdateTrackingRequest.h; sourceTree = "<group>"; };
+		FFABFED1957B545386834ADC /* AftershipTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipTracking.h; sourceTree = "<group>"; };
+		FFABFEE733E2A61F1F85A21A /* AftershipRetrackTrackingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipRetrackTrackingRequest.m; sourceTree = "<group>"; };
+		FFABFEEE88E10E8BC777BBE4 /* AftershipCheckpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipCheckpoint.h; sourceTree = "<group>"; };
+		FFABFF65CEB80957BD41CFFF /* AftershipGetAllCouriersRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipGetAllCouriersRequest.h; sourceTree = "<group>"; };
+		FFABFFFADD5013B65F73271F /* AftershipGetLastCheckpointResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipGetLastCheckpointResponse.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFABF09153ECED8A32D857AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFABFD9EED589B82BBD9F051 /* Foundation.framework in Frameworks */,
+				5FCA4A82026944DDB86EA35B /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFABFBA966F82E4FAD7EEED5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFABFD9DE85B5A07F80B02F2 /* XCTest.framework in Frameworks */,
+				FFABF6BF92328A98E68B554F /* Foundation.framework in Frameworks */,
+				FFABF2DF54278A8B27A9962E /* UIKit.framework in Frameworks */,
+				FFABF9E8AF7D03C7A811168E /* libAftership-iOS-SDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFABF19DEB428E8B2F9191E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFABF4221888B5030E10329E /* Foundation.framework */,
+				FFABFB3FB540699BFDCA04C6 /* XCTest.framework */,
+				FFABFD1C5DDDC4C3FFC9EBBC /* UIKit.framework */,
+				EFC14602013C4F17BC160B19 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFABF28BA57EE8C81D2E8A60 /* Aftership-iOS-SDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFABF379C3A34D8D147299CD /* Supporting Files */,
+				FFABF418FA8503261FD9D5E1 /* CourierRequestsTests.m */,
+				FFABFD35A323A2B6430CC156 /* NotificationRequestsTests.m */,
+				FFABF0ADCF71435C8F1AA0C6 /* TrackingRequestsTests.m */,
+				FFABF9C0D03BC5431CF5E3D5 /* LastCheckpointRequestTest.m */,
+			);
+			path = "Aftership-iOS-SDKTests";
+			sourceTree = "<group>";
+		};
+		FFABF34965A84C111176A377 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFABF661E416CBB6B41AADA1 /* libAftership-iOS-SDK.a */,
+				FFABF834320F55F79F2C2270 /* Aftership-iOS-SDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFABF379C3A34D8D147299CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFABF149F5F5C36EA1758AAB /* Aftership-iOS-SDKTests-Info.plist */,
+				FFABF0B7F031B007297FC869 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFABF4C4DFC271B0EBDB8876 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				FFABF14C1EAF01FD8451E8DD /* AftershipAbstractRequest.h */,
+				FFABF3D6F8DBB64D88A5688C /* AftershipAbstractRequest.m */,
+				FFABFE652AC4E0C9511BBC25 /* AftershipGetTrackingRequest.h */,
+				FFABF0174161CCD34C02DD10 /* AftershipGetTrackingRequest.m */,
+				FFABF27A8CF767D4ECBBCA6C /* AftershipGetTrackingsRequest.h */,
+				FFABF0D2D0BA2BD87D397830 /* AftershipGetTrackingsRequest.m */,
+				FFABFA5D6F33773C55734D11 /* AftershipDetectCourierRequest.h */,
+				FFABF1EB5AB39E815FA24038 /* AftershipDetectCourierRequest.m */,
+				FFABFB4D55C9F1041346D335 /* AftershipCreateTrackingRequest.h */,
+				FFABF2ABE4124F6711BDCC6E /* AftershipCreateTrackingRequest.m */,
+				FFABF8CB378F5CA6B7DB9C22 /* AftershipDeleteTrackingRequest.h */,
+				FFABF332103000F8E8222B92 /* AftershipDeleteTrackingRequest.m */,
+				FFABFF65CEB80957BD41CFFF /* AftershipGetAllCouriersRequest.h */,
+				FFABF08C78E75C115AB87046 /* AftershipGetAllCouriersRequest.m */,
+				FFABFECDADD9FA7F14525FDC /* AftershipUpdateTrackingRequest.h */,
+				FFABF77CFBA1E9057618473B /* AftershipUpdateTrackingRequest.m */,
+				FFABFE0B685D2D24B8A0BE66 /* AftershipAddNotificationRequest.h */,
+				FFABFA32826DE8347C628750 /* AftershipAddNotificationRequest.m */,
+				FFABF09841625585637B385A /* AftershipGetUserCouriersRequest.h */,
+				FFABF717ED4D63F325684B58 /* AftershipGetUserCouriersRequest.m */,
+				FFABF2FC2560E5A4D7EA8FA2 /* AftershipRetrackTrackingRequest.h */,
+				FFABFEE733E2A61F1F85A21A /* AftershipRetrackTrackingRequest.m */,
+				FFABF6EE1CDB7075F56EFA7E /* AftershipGetNotificationsRequest.h */,
+				FFABF0380C6DB6BC4EB2D0D2 /* AftershipGetNotificationsRequest.m */,
+				FFABFE1628FDC5E6FC8922FD /* AftershipGetLastCheckpointRequest.h */,
+				FFABF52010A60EB69526471F /* AftershipGetLastCheckpointRequest.m */,
+				FFABFB8D522C9DD3AC8E49B8 /* AftershipRemoveNotificationRequest.h */,
+				FFABF237B877C75F67A5463C /* AftershipRemoveNotificationRequest.m */,
+				FFABF6F0046FC81B28C48AFD /* AftershipAbstractSingleTrackingRequest.h */,
+				FFABFC57A779FB4D3388426F /* AftershipAbstractSingleTrackingRequest.m */,
+				FFABF047822793F629E5B7AE /* AftershipAbstractMultipleObjectsRequest.h */,
+				FFABF890F9E7490AF5B7B2F8 /* AftershipAbstractMultipleObjectsRequest.m */,
+				FFABF1017EEC3CB7C401D60C /* AftershipAbstractSingleNotificationRequest.h */,
+				FFABFA97A4AA776F61C9B572 /* AftershipAbstractSingleNotificationRequest.m */,
+				FFABF33FADB08C93D25624C0 /* AftershipAbstractSingleObjectOperationRequest.h */,
+				FFABF616BE7FE519B7228EF6 /* AftershipAbstractSingleObjectOperationRequest.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		FFABF516E8D949ADCDCB72DB /* Aftership-iOS-SDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Aftership-iOS-SDKDemo";
+			sourceTree = "<group>";
+		};
+		FFABF522C2757224EA4E117E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFABF73B3C4192E53F224250 /* AftershipMeta.h */,
+				FFABF9E3401B0BE0D9A33577 /* AftershipMeta.m */,
+				FFABF10176FB5F87B9D6408D /* AftershipCourier.h */,
+				FFABF5543AE7BC6C8767A6FD /* AftershipCourier.m */,
+				FFABFED1957B545386834ADC /* AftershipTracking.h */,
+				FFABF00285A571655D954DA7 /* AftershipTracking.m */,
+				FFABFEEE88E10E8BC777BBE4 /* AftershipCheckpoint.h */,
+				FFABFAC2A0626E28F7F7F778 /* AftershipCheckpoint.m */,
+				FFABF863CD5F79103F662B99 /* AftershipNotification.h */,
+				FFABFA9D0778011A811B7B61 /* AftershipNotification.m */,
+				FFABF9C2BDFE0231DC2ABE8F /* AftershipGetLastCheckpointResponse.h */,
+				FFABFCFBCB57E9F307997CD0 /* AftershipGetCouriersResponse.m */,
+				FFABFFFADD5013B65F73271F /* AftershipGetLastCheckpointResponse.m */,
+				FFABFAAEE9A4FC6EC1765BC7 /* AftershipGetCouriersResponse.h */,
+				FFABF5FD0073F0154023437D /* AftershipGetTrackingsResponse.h */,
+				FFABF24AF04147F129047536 /* AftershipGetTrackingsResponse.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FFABF5BDAA4CE1EE48BF5598 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FFABF99DF091DE9DE4798FCE /* Utils */,
+				FFABF8F8D723747AB365DB3F /* Error */,
+				FFABFB605408F7CE5159BF00 /* Constants */,
+				FFABF522C2757224EA4E117E /* Models */,
+				FFABF4C4DFC271B0EBDB8876 /* Requests */,
+				FFABF96C0ABE4F0E98C4BA52 /* AftershipClient.m */,
+				FFABF2C4229BCAEDA421C896 /* AftershipClient.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FFABF8F8D723747AB365DB3F /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				FFABF23F0297DAC464C00508 /* AftershipError.h */,
+				FFABF0272B16871250382D05 /* AftershipError.m */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		FFABF96EE1D48891FB408FFD /* Aftership-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				FFABFA567416A00D80C2617C /* Supporting Files */,
+				FFABF5BDAA4CE1EE48BF5598 /* Classes */,
+				FFABFBDB3B4C07CCC9F9E650 /* Headers */,
+			);
+			path = "Aftership-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		FFABF99DF091DE9DE4798FCE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FFABF9525E8618610C4E0316 /* AftershipLogUtil.h */,
+				FFABF3C3A2932F5F6B5D5740 /* AftershipLogUtil.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FFABFA567416A00D80C2617C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFABFBEB7022EB8ACBD5EF8C /* Aftership-iOS-SDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFABFB605408F7CE5159BF00 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FFABF99717C624A95DC1EEC4 /* AftershipConstants.h */,
+				FFABFC2FC6E5A784D28B820A /* AftershipConstants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FFABFBBDD9A4204F7033660F = {
+			isa = PBXGroup;
+			children = (
+				FFABF34965A84C111176A377 /* Products */,
+				FFABF19DEB428E8B2F9191E9 /* Frameworks */,
+				FFABF96EE1D48891FB408FFD /* Aftership-iOS-SDK */,
+				FFABF28BA57EE8C81D2E8A60 /* Aftership-iOS-SDKTests */,
+				3035D770382949068CB8D063 /* Pods.xcconfig */,
+				FFABF516E8D949ADCDCB72DB /* Aftership-iOS-SDKDemo */,
+			);
+			sourceTree = "<group>";
+		};
+		FFABFBDB3B4C07CCC9F9E650 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				FFABFA3B186E5CC180CF6FBD /* Aftership.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFABF47B68E56AC05BF89204 /* Aftership-iOS-SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFABFA8D03F41E9B6981C152 /* Build configuration list for PBXNativeTarget "Aftership-iOS-SDK" */;
+			buildPhases = (
+				4EAF76F3258741E897AD178F /* Check Pods Manifest.lock */,
+				FFABF11C6D39E17C427BC47A /* Sources */,
+				FFABF09153ECED8A32D857AB /* Frameworks */,
+				FFABF455B54BD37CB9C6744C /* CopyFiles */,
+				E89B46DD0D2446248722A874 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Aftership-iOS-SDK";
+			productName = "Aftership-iOS-SDK";
+			productReference = FFABF661E416CBB6B41AADA1 /* libAftership-iOS-SDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FFABFAE3936760E5652FEE07 /* Aftership-iOS-SDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFABFBB232D0AC9A80EC5746 /* Build configuration list for PBXNativeTarget "Aftership-iOS-SDKTests" */;
+			buildPhases = (
+				FF2800901133434EB76966C5 /* Check Pods Manifest.lock */,
+				FFABFE97D9C2890DF3BB7E45 /* Sources */,
+				FFABFBA966F82E4FAD7EEED5 /* Frameworks */,
+				FFABF7217703C2587C998EEE /* Resources */,
+				6FB76633841A4CDD84F03CDE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFABF6E31298712CCBB80AAF /* PBXTargetDependency */,
+			);
+			name = "Aftership-iOS-SDKTests";
+			productName = "Aftership-iOS-SDKTests";
+			productReference = FFABF834320F55F79F2C2270 /* Aftership-iOS-SDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFABFE6C18D9F1CFF4EE494C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Aftership;
+			};
+			buildConfigurationList = FFABF885C946FEDD77E608B2 /* Build configuration list for PBXProject "Aftership-iOS-SDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FFABFBBDD9A4204F7033660F;
+			productRefGroup = FFABF34965A84C111176A377 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFABF47B68E56AC05BF89204 /* Aftership-iOS-SDK */,
+				FFABFAE3936760E5652FEE07 /* Aftership-iOS-SDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFABF7217703C2587C998EEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFABF6D557D9954BE94B4AC1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EAF76F3258741E897AD178F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6FB76633841A4CDD84F03CDE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E89B46DD0D2446248722A874 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF2800901133434EB76966C5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFABF11C6D39E17C427BC47A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFABFA5475269EFE317CE5F0 /* AftershipLogUtil.m in Sources */,
+				FFABF0428E036B6B924F8545 /* AftershipError.m in Sources */,
+				FFABF62E77073D7678F3D6E9 /* AftershipConstants.m in Sources */,
+				FFABFCDE7B82A503F78407D9 /* AftershipMeta.m in Sources */,
+				FFABFF0AD3D059F06A705D71 /* AftershipCourier.m in Sources */,
+				FFABF0CF801F81181A6668F9 /* AftershipTracking.m in Sources */,
+				FFABF43E9B2B0D0F534E86CF /* AftershipCheckpoint.m in Sources */,
+				FFABFBF3F218048753855007 /* AftershipNotification.m in Sources */,
+				FFABF0D6EC55321B6FF96C26 /* AftershipAbstractRequest.m in Sources */,
+				FFABF3D3A98912922C13AAAC /* AftershipGetTrackingRequest.m in Sources */,
+				FFABF22E615D94765F4C38B7 /* AftershipGetTrackingsRequest.m in Sources */,
+				FFABF3652510FA0B1C5169AE /* AftershipDetectCourierRequest.m in Sources */,
+				FFABFD4FA88B580A503901A0 /* AftershipCreateTrackingRequest.m in Sources */,
+				FFABF590E604426E3BC66842 /* AftershipDeleteTrackingRequest.m in Sources */,
+				FFABF88B8E375FEC87261116 /* AftershipGetAllCouriersRequest.m in Sources */,
+				FFABFC6C6D12879414CE40AE /* AftershipUpdateTrackingRequest.m in Sources */,
+				FFABF1136C910DE32E97FB59 /* AftershipAddNotificationRequest.m in Sources */,
+				FFABF0CE4A633EC09897A27B /* AftershipGetUserCouriersRequest.m in Sources */,
+				FFABF0BCCEB0EC90BF7014D8 /* AftershipRetrackTrackingRequest.m in Sources */,
+				FFABF40363C7FD6BAB6EBF60 /* AftershipGetNotificationsRequest.m in Sources */,
+				FFABF13D93A1700253E9A75B /* AftershipGetLastCheckpointRequest.m in Sources */,
+				FFABFF5835EF4A900BD5CF91 /* AftershipRemoveNotificationRequest.m in Sources */,
+				FFABF70D9A594175477F088D /* AftershipAbstractSingleTrackingRequest.m in Sources */,
+				FFABFF1DCE4EF6ECE370288A /* AftershipAbstractMultipleObjectsRequest.m in Sources */,
+				FFABFB01788748FCED5D8E95 /* AftershipAbstractSingleNotificationRequest.m in Sources */,
+				FFABFECC0324A8CC6D03E80B /* AftershipAbstractSingleObjectOperationRequest.m in Sources */,
+				FFABFEDAD4784AA434CE1F20 /* AftershipGetCouriersResponse.m in Sources */,
+				FFABF6564BE1017B56500071 /* AftershipGetLastCheckpointResponse.m in Sources */,
+				FFABFD7BF7B5C568E89FEABD /* AftershipGetTrackingsResponse.m in Sources */,
+				FFABFC6ACDFB0557784E88B1 /* AftershipClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFABFE97D9C2890DF3BB7E45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16645D45198F3096006F1F39 /* NotificationRequestsTests.m in Sources */,
+				16645D44198F3092006F1F39 /* CourierRequestsTests.m in Sources */,
+				16645D46198F79F4006F1F39 /* TrackingRequestsTests.m in Sources */,
+				16645D47198F79F7006F1F39 /* LastCheckpointRequestTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFABF6E31298712CCBB80AAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFABF47B68E56AC05BF89204 /* Aftership-iOS-SDK */;
+			targetProxy = FFABFA22D9653F9CF70AB8F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFABF0B7F031B007297FC869 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFABF2C9AD80E0F075E048E0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFABF112E88C16946D7D71A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FFABF81B5036B137C7EECF1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFABF913A6A9DE30819E66C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3035D770382949068CB8D063 /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/Aftership_iOS_SDK.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Aftership-iOS-SDK/Aftership-iOS-SDK-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FFABF9C2621942BA4500943B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3035D770382949068CB8D063 /* Pods.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Aftership-iOS-SDK/Aftership-iOS-SDK-Prefix.pch";
+				INFOPLIST_FILE = "Aftership-iOS-SDKTests/Aftership-iOS-SDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FFABFA8725935BB08EDBE289 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3035D770382949068CB8D063 /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/Aftership_iOS_SDK.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Aftership-iOS-SDK/Aftership-iOS-SDK-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FFABFEAA7DF4A8A6A320B9F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3035D770382949068CB8D063 /* Pods.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Aftership-iOS-SDK/Aftership-iOS-SDK-Prefix.pch";
+				INFOPLIST_FILE = "Aftership-iOS-SDKTests/Aftership-iOS-SDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFABF885C946FEDD77E608B2 /* Build configuration list for PBXProject "Aftership-iOS-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFABF112E88C16946D7D71A8 /* Debug */,
+				FFABF81B5036B137C7EECF1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFABFA8D03F41E9B6981C152 /* Build configuration list for PBXNativeTarget "Aftership-iOS-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFABFA8725935BB08EDBE289 /* Debug */,
+				FFABF913A6A9DE30819E66C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFABFBB232D0AC9A80EC5746 /* Build configuration list for PBXNativeTarget "Aftership-iOS-SDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFABF9C2621942BA4500943B /* Debug */,
+				FFABFEAA7DF4A8A6A320B9F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFABFE6C18D9F1CFF4EE494C /* Project object */;
+}
