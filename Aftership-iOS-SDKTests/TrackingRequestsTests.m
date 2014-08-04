@@ -71,7 +71,7 @@
                   AftershipGetTrackingsResponse *response,
                   NSError *error) {
               XCTAssertNil(error, "Get trackings should success");
-              XCTAssertTrue(response.count.intValue > 2, "Should have at least 2 records");
+              XCTAssertTrue(response.count.intValue >= 2, "Should have at least 2 records");
               XCTAssertNotNil([(AftershipTracking *) response.trackings.firstObject title], "Should has title");
               XCTAssertNil([(AftershipTracking *) response.trackings.firstObject trackingNumber],
                            "Should not have tracking number");
