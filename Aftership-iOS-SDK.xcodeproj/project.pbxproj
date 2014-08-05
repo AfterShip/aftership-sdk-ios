@@ -18,6 +18,7 @@
 		FFABF0CF801F81181A6668F9 /* AftershipTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF00285A571655D954DA7 /* AftershipTracking.m */; };
 		FFABF0D6EC55321B6FF96C26 /* AftershipAbstractRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF3D6F8DBB64D88A5688C /* AftershipAbstractRequest.m */; };
 		FFABF1136C910DE32E97FB59 /* AftershipAddNotificationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABFA32826DE8347C628750 /* AftershipAddNotificationRequest.m */; };
+		FFABF130B5A49D20822A8C53 /* AftershipTestClientUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF5B19C5CC06CF1B13C51 /* AftershipTestClientUtils.m */; };
 		FFABF13D93A1700253E9A75B /* AftershipGetLastCheckpointRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF52010A60EB69526471F /* AftershipGetLastCheckpointRequest.m */; };
 		FFABF22E615D94765F4C38B7 /* AftershipGetTrackingsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF0D2D0BA2BD87D397830 /* AftershipGetTrackingsRequest.m */; };
 		FFABF2DF54278A8B27A9962E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFABFD1C5DDDC4C3FFC9EBBC /* UIKit.framework */; };
@@ -26,15 +27,14 @@
 		FFABF40363C7FD6BAB6EBF60 /* AftershipGetNotificationsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF0380C6DB6BC4EB2D0D2 /* AftershipGetNotificationsRequest.m */; };
 		FFABF43E9B2B0D0F534E86CF /* AftershipCheckpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABFAC2A0626E28F7F7F778 /* AftershipCheckpoint.m */; };
 		FFABF590E604426E3BC66842 /* AftershipDeleteTrackingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF332103000F8E8222B92 /* AftershipDeleteTrackingRequest.m */; };
-		FFABF62E77073D7678F3D6E9 /* AftershipConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABFC2FC6E5A784D28B820A /* AftershipConstants.m */; };
 		FFABF6564BE1017B56500071 /* AftershipGetLastCheckpointResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABFFFADD5013B65F73271F /* AftershipGetLastCheckpointResponse.m */; };
 		FFABF6BF92328A98E68B554F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFABF4221888B5030E10329E /* Foundation.framework */; };
 		FFABF6D557D9954BE94B4AC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFABF0B7F031B007297FC869 /* InfoPlist.strings */; };
 		FFABF70D9A594175477F088D /* AftershipAbstractSingleTrackingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABFC57A779FB4D3388426F /* AftershipAbstractSingleTrackingRequest.m */; };
 		FFABF88B8E375FEC87261116 /* AftershipGetAllCouriersRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF08C78E75C115AB87046 /* AftershipGetAllCouriersRequest.m */; };
 		FFABF9E8AF7D03C7A811168E /* libAftership-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFABF661E416CBB6B41AADA1 /* libAftership-iOS-SDK.a */; };
-		FFABFA5475269EFE317CE5F0 /* AftershipLogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF3C3A2932F5F6B5D5740 /* AftershipLogUtil.m */; };
 		FFABFB01788748FCED5D8E95 /* AftershipAbstractSingleNotificationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABFA97A4AA776F61C9B572 /* AftershipAbstractSingleNotificationRequest.m */; };
+		FFABFB8B355DA411F550C44F /* AftershipLogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF4A5BAD4714C4D00C9BC /* AftershipLogUtil.m */; };
 		FFABFBF3F218048753855007 /* AftershipNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABFA9D0778011A811B7B61 /* AftershipNotification.m */; };
 		FFABFC6ACDFB0557784E88B1 /* AftershipClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF96C0ABE4F0E98C4BA52 /* AftershipClient.m */; };
 		FFABFC6C6D12879414CE40AE /* AftershipUpdateTrackingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF77CFBA1E9057618473B /* AftershipUpdateTrackingRequest.m */; };
@@ -99,12 +99,14 @@
 		FFABF2FC2560E5A4D7EA8FA2 /* AftershipRetrackTrackingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipRetrackTrackingRequest.h; sourceTree = "<group>"; };
 		FFABF332103000F8E8222B92 /* AftershipDeleteTrackingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipDeleteTrackingRequest.m; sourceTree = "<group>"; };
 		FFABF33FADB08C93D25624C0 /* AftershipAbstractSingleObjectOperationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipAbstractSingleObjectOperationRequest.h; sourceTree = "<group>"; };
-		FFABF3C3A2932F5F6B5D5740 /* AftershipLogUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipLogUtil.m; sourceTree = "<group>"; };
+		FFABF3D2D7831DE7E5A9A6B7 /* AftershipLogUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipLogUtil.h; sourceTree = "<group>"; };
 		FFABF3D6F8DBB64D88A5688C /* AftershipAbstractRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipAbstractRequest.m; sourceTree = "<group>"; };
 		FFABF418FA8503261FD9D5E1 /* CourierRequestsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourierRequestsTests.m; sourceTree = "<group>"; };
 		FFABF4221888B5030E10329E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FFABF4A5BAD4714C4D00C9BC /* AftershipLogUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipLogUtil.m; sourceTree = "<group>"; };
 		FFABF52010A60EB69526471F /* AftershipGetLastCheckpointRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipGetLastCheckpointRequest.m; sourceTree = "<group>"; };
 		FFABF5543AE7BC6C8767A6FD /* AftershipCourier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipCourier.m; sourceTree = "<group>"; };
+		FFABF5B19C5CC06CF1B13C51 /* AftershipTestClientUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipTestClientUtils.m; sourceTree = "<group>"; };
 		FFABF5FD0073F0154023437D /* AftershipGetTrackingsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipGetTrackingsResponse.h; sourceTree = "<group>"; };
 		FFABF616BE7FE519B7228EF6 /* AftershipAbstractSingleObjectOperationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipAbstractSingleObjectOperationRequest.m; sourceTree = "<group>"; };
 		FFABF661E416CBB6B41AADA1 /* libAftership-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libAftership-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,9 +119,9 @@
 		FFABF863CD5F79103F662B99 /* AftershipNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipNotification.h; sourceTree = "<group>"; };
 		FFABF890F9E7490AF5B7B2F8 /* AftershipAbstractMultipleObjectsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipAbstractMultipleObjectsRequest.m; sourceTree = "<group>"; };
 		FFABF8CB378F5CA6B7DB9C22 /* AftershipDeleteTrackingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipDeleteTrackingRequest.h; sourceTree = "<group>"; };
-		FFABF9525E8618610C4E0316 /* AftershipLogUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipLogUtil.h; sourceTree = "<group>"; };
 		FFABF96C0ABE4F0E98C4BA52 /* AftershipClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipClient.m; sourceTree = "<group>"; };
 		FFABF99717C624A95DC1EEC4 /* AftershipConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipConstants.h; sourceTree = "<group>"; };
+		FFABF9AD215A1D4EB2D81EE0 /* AftershipTestClientUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipTestClientUtils.h; sourceTree = "<group>"; };
 		FFABF9C0D03BC5431CF5E3D5 /* LastCheckpointRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastCheckpointRequestTest.m; sourceTree = "<group>"; };
 		FFABF9C2BDFE0231DC2ABE8F /* AftershipGetLastCheckpointResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipGetLastCheckpointResponse.h; sourceTree = "<group>"; };
 		FFABF9E3401B0BE0D9A33577 /* AftershipMeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipMeta.m; sourceTree = "<group>"; };
@@ -134,7 +136,6 @@
 		FFABFB4D55C9F1041346D335 /* AftershipCreateTrackingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipCreateTrackingRequest.h; sourceTree = "<group>"; };
 		FFABFB8D522C9DD3AC8E49B8 /* AftershipRemoveNotificationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipRemoveNotificationRequest.h; sourceTree = "<group>"; };
 		FFABFBEB7022EB8ACBD5EF8C /* Aftership-iOS-SDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Aftership-iOS-SDK-Prefix.pch"; sourceTree = "<group>"; };
-		FFABFC2FC6E5A784D28B820A /* AftershipConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipConstants.m; sourceTree = "<group>"; };
 		FFABFC57A779FB4D3388426F /* AftershipAbstractSingleTrackingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipAbstractSingleTrackingRequest.m; sourceTree = "<group>"; };
 		FFABFCFBCB57E9F307997CD0 /* AftershipGetCouriersResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipGetCouriersResponse.m; sourceTree = "<group>"; };
 		FFABFD1C5DDDC4C3FFC9EBBC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -193,6 +194,7 @@
 				FFABFD35A323A2B6430CC156 /* NotificationRequestsTests.m */,
 				FFABF0ADCF71435C8F1AA0C6 /* TrackingRequestsTests.m */,
 				FFABF9C0D03BC5431CF5E3D5 /* LastCheckpointRequestTest.m */,
+				FFABFF107F785035A515EFAC /* Utils */,
 			);
 			path = "Aftership-iOS-SDKTests";
 			sourceTree = "<group>";
@@ -291,15 +293,24 @@
 		FFABF5BDAA4CE1EE48BF5598 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FFABF99DF091DE9DE4798FCE /* Utils */,
 				FFABF8F8D723747AB365DB3F /* Error */,
 				FFABFB605408F7CE5159BF00 /* Constants */,
 				FFABF522C2757224EA4E117E /* Models */,
 				FFABF4C4DFC271B0EBDB8876 /* Requests */,
 				FFABF96C0ABE4F0E98C4BA52 /* AftershipClient.m */,
 				FFABF2C4229BCAEDA421C896 /* AftershipClient.h */,
+				FFABF861088D995F6AD2D44B /* Utils */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		FFABF861088D995F6AD2D44B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FFABF3D2D7831DE7E5A9A6B7 /* AftershipLogUtil.h */,
+				FFABF4A5BAD4714C4D00C9BC /* AftershipLogUtil.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		FFABF8F8D723747AB365DB3F /* Error */ = {
@@ -321,15 +332,6 @@
 			path = "Aftership-iOS-SDK";
 			sourceTree = "<group>";
 		};
-		FFABF99DF091DE9DE4798FCE /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				FFABF9525E8618610C4E0316 /* AftershipLogUtil.h */,
-				FFABF3C3A2932F5F6B5D5740 /* AftershipLogUtil.m */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		FFABFA567416A00D80C2617C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,7 +344,6 @@
 			isa = PBXGroup;
 			children = (
 				FFABF99717C624A95DC1EEC4 /* AftershipConstants.h */,
-				FFABFC2FC6E5A784D28B820A /* AftershipConstants.m */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -365,6 +366,15 @@
 				FFABFA3B186E5CC180CF6FBD /* Aftership.h */,
 			);
 			path = Headers;
+			sourceTree = "<group>";
+		};
+		FFABFF107F785035A515EFAC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FFABF5B19C5CC06CF1B13C51 /* AftershipTestClientUtils.m */,
+				FFABF9AD215A1D4EB2D81EE0 /* AftershipTestClientUtils.h */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,9 +524,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFABFA5475269EFE317CE5F0 /* AftershipLogUtil.m in Sources */,
 				FFABF0428E036B6B924F8545 /* AftershipError.m in Sources */,
-				FFABF62E77073D7678F3D6E9 /* AftershipConstants.m in Sources */,
 				FFABFCDE7B82A503F78407D9 /* AftershipMeta.m in Sources */,
 				FFABFF0AD3D059F06A705D71 /* AftershipCourier.m in Sources */,
 				FFABF0CF801F81181A6668F9 /* AftershipTracking.m in Sources */,
@@ -544,6 +552,7 @@
 				FFABF6564BE1017B56500071 /* AftershipGetLastCheckpointResponse.m in Sources */,
 				FFABFD7BF7B5C568E89FEABD /* AftershipGetTrackingsResponse.m in Sources */,
 				FFABFC6ACDFB0557784E88B1 /* AftershipClient.m in Sources */,
+				FFABFB8B355DA411F550C44F /* AftershipLogUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +564,7 @@
 				16645D44198F3092006F1F39 /* CourierRequestsTests.m in Sources */,
 				16645D46198F79F4006F1F39 /* TrackingRequestsTests.m in Sources */,
 				16645D47198F79F7006F1F39 /* LastCheckpointRequestTest.m in Sources */,
+				FFABF130B5A49D20822A8C53 /* AftershipTestClientUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
