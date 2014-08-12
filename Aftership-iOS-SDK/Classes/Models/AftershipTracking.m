@@ -61,7 +61,7 @@
   [description appendFormat:@", self.trackingShipDate=%@", self.trackingShipDate];
   [description appendFormat:@", self.trackingAccountNumber=%@", self.trackingAccountNumber];
   [description appendFormat:@", self.slug=%@", self.slug];
-  [description appendFormat:@", self.isActive=%d", self.isActive];
+  [description appendFormat:@", self.isActive=%@", self.isActive];
   [description appendFormat:@", self.customFields=%@", self.customFields];
   [description appendFormat:@", self.customName=%@", self.customName];
   [description appendFormat:@", self.delivery_time=%@", self.deliveryTime];

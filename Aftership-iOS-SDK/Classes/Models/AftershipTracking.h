@@ -18,7 +18,7 @@
 @property (nonatomic, strong) NSString* trackingShipDate;
 @property (nonatomic, strong) NSString* trackingAccountNumber;
 @property (nonatomic, strong) NSString* slug;
-@property (nonatomic) bool isActive;
+@property (nonatomic, strong) NSNumber * isActive;
 @property (nonatomic, strong) NSDictionary* customFields;
 @property (nonatomic, strong) NSString* customName;
 @property (nonatomic, strong) NSNumber* deliveryTime;
