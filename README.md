@@ -3,7 +3,7 @@ Aftership iOS SDK v1.0.0
 
 **AfterShip API SDK for iOS**
 
-**Compatible with Afership API v4**
+**Compatible with Aftership API v4**
 
 
 ## Installation
@@ -19,7 +19,7 @@ pod 'Aftership-iOS-SDK', '~> 1.0.0'
 ### via source code
 
 Developer can download source code here and integrate it with your project.
-Note that this project depends on [RestKit](https://github.com/RestKit/RestKit/) for network and [RXPromise](https://github.com/couchdeveloper/RXPromise) for tests. Developer have to also included them for compilation.
+Note that this project depends on [RestKit](https://github.com/RestKit/RestKit/) for network and [RXPromise](https://github.com/couchdeveloper/RXPromise) for tests. Developers have to also include them for compilation.
 
 ## Usage
 
