@@ -17,6 +17,7 @@
 @property (nonatomic, strong) NSString* trackingPostalCode;
 @property (nonatomic, strong) NSString* trackingShipDate;
 @property (nonatomic, strong) NSString* trackingAccountNumber;
+@property (nonatomic, strong) NSString* trackingDestinationCountry;
 @property (nonatomic, strong) NSString* slug;
 @property (nonatomic, strong) NSNumber * isActive;
 @property (nonatomic, strong) NSDictionary* customFields;
@@ -40,7 +41,11 @@
 @property (nonatomic, strong) NSString* title;
 @property (nonatomic, strong) NSNumber* trackedCount;
 @property (nonatomic, strong) NSArray* checkpoints;
+@property (nonatomic, strong) NSArray* android;
+@property (nonatomic, strong) NSArray* ios;
 
+
++ (NSDictionary *)mappingDictionary;
 
 - (NSString *)description;
 
