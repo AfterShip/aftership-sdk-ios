@@ -4,7 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <RestKit/RestKit.h>
 
 @interface AftershipNotification : NSObject
 

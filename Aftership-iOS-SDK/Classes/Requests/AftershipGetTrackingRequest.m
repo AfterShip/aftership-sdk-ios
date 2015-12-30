@@ -47,9 +47,12 @@
 
 - (void)doExecuteWithManager:(RKObjectManager *)manager {
 
+
+  NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:self.requiredFields];
+  [params addEntriesFromDictionary:self.paramDict];
   [manager getObject:nil
                 path:self.path
-          parameters:self.paramDict
+          parameters:params
              success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
                  [self handleResult:mappingResult withError:nil];
              }

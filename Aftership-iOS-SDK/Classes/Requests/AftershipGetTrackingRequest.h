@@ -19,4 +19,5 @@
 
 @property (nonatomic, strong) NSString *fields;
 @property (nonatomic, strong) NSString *lang;
+@property (nonatomic, strong) NSDictionary *requiredFields;
 @end

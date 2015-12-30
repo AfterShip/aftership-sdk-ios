@@ -5,6 +5,7 @@
 
 #import "AftershipTracking.h"
 #import "AftershipCheckpoint.h"
+#import "AftershipGetLastCheckpointResponse.h"
 
 
 @implementation AftershipTracking {
@@ -14,7 +15,14 @@
 + (RKObjectMapping *)responseMapping
 {
   RKObjectMapping *mapping = [RKObjectMapping mappingForClass:[self class]];
-  [mapping addAttributeMappingsFromDictionary:@{
+  [mapping addAttributeMappingsFromDictionary:[[self class] mappingDictionary]];
+  [mapping addPropertyMapping:[RKRelationshipMapping relationshipMappingFromKeyPath:@"checkpoints" toKeyPath:@"checkpoints" withMapping:[[AftershipCheckpoint class] responseMapping]]];
+  return mapping;
+}
+
++ (NSDictionary *)mappingDictionary
+{
+  return @{
           @"created_at" : @"createTime",
           @"updated_at" : @"updateTime",
           @"id" : @"identifier",
@@ -22,6 +30,8 @@
           @"tracking_postal_code" : @"trackingPostalCode",
           @"tracking_ship_date" : @"trackingShipDate",
           @"tracking_account_number" : @"trackingAccountNumber",
+          @"tracking_destination_country":@"trackingDestinationCountry",
+          @"tracking_key":@"trackingKey",
           @"slug" : @"slug",
           @"active" : @"isActive",
           @"custom_fields" : @"customFields",
@@ -43,11 +53,10 @@
           @"source" : @"source",
           @"tag" : @"tag",
           @"title" : @"title",
-          @"tracked_count" : @"trackedCount"
-  }];
-  [mapping addPropertyMapping:[RKRelationshipMapping relationshipMappingFromKeyPath:@"checkpoints" toKeyPath:@"checkpoints" withMapping:[[AftershipCheckpoint class] responseMapping]]];
-
-  return mapping;
+          @"tracked_count" : @"trackedCount",
+          @"android":@"android",
+          @"ios":@"ios"
+  };
 }
 
 
@@ -60,6 +69,8 @@
   [description appendFormat:@", self.trackingPostalCode=%@", self.trackingPostalCode];
   [description appendFormat:@", self.trackingShipDate=%@", self.trackingShipDate];
   [description appendFormat:@", self.trackingAccountNumber=%@", self.trackingAccountNumber];
+  [description appendFormat:@", self.trackingDestinationCountry=%@", self.trackingDestinationCountry];
+  [description appendFormat:@", self.trackingKey=%@", self.trackingKey];
   [description appendFormat:@", self.slug=%@", self.slug];
   [description appendFormat:@", self.isActive=%@", self.isActive];
   [description appendFormat:@", self.customFields=%@", self.customFields];
@@ -78,6 +89,8 @@
   [description appendFormat:@", self.shipmentWeightUnit=%@", self.shipmentWeightUnit];
   [description appendFormat:@", self.signedBy=%@", self.signedBy];
   [description appendFormat:@", self.smses=%@", self.smses];
+  [description appendFormat:@", self.android=%@", self.android];
+  [description appendFormat:@", self.ios=%@", self.ios];
   [description appendFormat:@", self.source=%@", self.source];
   [description appendFormat:@", self.tag=%@", self.tag];
   [description appendFormat:@", self.title=%@", self.title];
@@ -86,6 +99,8 @@
   [description appendString:@">"];
   return description;
 }
+
+
 
 
 @end
