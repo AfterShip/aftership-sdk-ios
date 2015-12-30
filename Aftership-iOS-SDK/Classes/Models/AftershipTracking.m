@@ -31,6 +31,7 @@
           @"tracking_ship_date" : @"trackingShipDate",
           @"tracking_account_number" : @"trackingAccountNumber",
           @"tracking_destination_country":@"trackingDestinationCountry",
+          @"tracking_key":@"trackingKey",
           @"slug" : @"slug",
           @"active" : @"isActive",
           @"custom_fields" : @"customFields",
@@ -69,6 +70,7 @@
   [description appendFormat:@", self.trackingShipDate=%@", self.trackingShipDate];
   [description appendFormat:@", self.trackingAccountNumber=%@", self.trackingAccountNumber];
   [description appendFormat:@", self.trackingDestinationCountry=%@", self.trackingDestinationCountry];
+  [description appendFormat:@", self.trackingKey=%@", self.trackingKey];
   [description appendFormat:@", self.slug=%@", self.slug];
   [description appendFormat:@", self.isActive=%@", self.isActive];
   [description appendFormat:@", self.customFields=%@", self.customFields];

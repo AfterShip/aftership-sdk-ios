@@ -1,4 +1,4 @@
-Aftership iOS SDK v1.0.0
+Aftership iOS SDK
 =============
 
 **AfterShip API SDK for iOS**
@@ -13,7 +13,7 @@ The recommended approach for installing Aftership iOS SDK is via the [CocoaPods]
 ### via CocoaPods
 
 ``` 
-pod 'Aftership-iOS-SDK', '~> 1.0.0'
+pod 'Aftership-iOS-SDK', '~> 1.1.0'
 ```
 
 ### via source code

@@ -18,6 +18,7 @@
 @property (nonatomic, strong) NSString* trackingShipDate;
 @property (nonatomic, strong) NSString* trackingAccountNumber;
 @property (nonatomic, strong) NSString* trackingDestinationCountry;
+@property (nonatomic, strong) NSString* trackingKey;
 @property (nonatomic, strong) NSString* slug;
 @property (nonatomic, strong) NSNumber * isActive;
 @property (nonatomic, strong) NSDictionary* customFields;

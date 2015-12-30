@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Aftership-iOS-SDK"
-  s.version      = "1.0.0"
+  s.version      = "1.1.0"
   s.summary      = "The iOS SDK of AfterShip API"
 
   s.description  = <<-DESC
@@ -52,7 +52,7 @@ Pod::Spec.new do |s|
   #  Specify a social_media_url where others can refer to, for example a twitter
   #  profile URL.
   #
-  
+
   s.author             = { "Feiko Lai@AfterShip Ltd." => "dg3feiko@gmail.com" }
   # Or just: s.author    = "AfterShip Ltd."
   # s.authors            = { "AfterShip Ltd." => "support@aftership.com" }
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/AfterShip/aftership-ios.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/AfterShip/aftership-ios.git", :tag => "1.1.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
