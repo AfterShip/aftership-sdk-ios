@@ -73,7 +73,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3035D770382949068CB8D063 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		6A746ABEAEED4CCCA344DB36 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A930F4B1AC520F95B6514488 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EFC14602013C4F17BC160B19 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFABF00285A571655D954DA7 /* AftershipTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipTracking.m; sourceTree = "<group>"; };
 		FFABF0174161CCD34C02DD10 /* AftershipGetTrackingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipGetTrackingRequest.m; sourceTree = "<group>"; };
@@ -175,6 +176,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA2CA4BA6790D0685226477A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A930F4B1AC520F95B6514488 /* Pods.debug.xcconfig */,
+				6A746ABEAEED4CCCA344DB36 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FFABF19DEB428E8B2F9191E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,8 +365,8 @@
 				FFABF19DEB428E8B2F9191E9 /* Frameworks */,
 				FFABF96EE1D48891FB408FFD /* Aftership-iOS-SDK */,
 				FFABF28BA57EE8C81D2E8A60 /* Aftership-iOS-SDKTests */,
-				3035D770382949068CB8D063 /* Pods.xcconfig */,
 				FFABF516E8D949ADCDCB72DB /* Aftership-iOS-SDKDemo */,
+				BA2CA4BA6790D0685226477A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -499,7 +509,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FF2800901133434EB76966C5 /* Check Pods Manifest.lock */ = {
@@ -660,7 +670,7 @@
 		};
 		FFABF913A6A9DE30819E66C9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3035D770382949068CB8D063 /* Pods.xcconfig */;
+			baseConfigurationReference = 6A746ABEAEED4CCCA344DB36 /* Pods.release.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Aftership_iOS_SDK.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -673,7 +683,6 @@
 		};
 		FFABF9C2621942BA4500943B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3035D770382949068CB8D063 /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -690,7 +699,7 @@
 		};
 		FFABFA8725935BB08EDBE289 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3035D770382949068CB8D063 /* Pods.xcconfig */;
+			baseConfigurationReference = A930F4B1AC520F95B6514488 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Aftership_iOS_SDK.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -703,7 +712,6 @@
 		};
 		FFABFEAA7DF4A8A6A320B9F4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3035D770382949068CB8D063 /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
