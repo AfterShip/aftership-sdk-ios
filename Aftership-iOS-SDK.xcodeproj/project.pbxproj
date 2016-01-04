@@ -435,6 +435,7 @@
 		FFABFE6C18D9F1CFF4EE494C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Aftership;
 			};
 			buildConfigurationList = FFABF885C946FEDD77E608B2 /* Build configuration list for PBXProject "Aftership-iOS-SDK" */;
@@ -617,6 +618,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -691,6 +693,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Aftership-iOS-SDK/Aftership-iOS-SDK-Prefix.pch";
 				INFOPLIST_FILE = "Aftership-iOS-SDKTests/Aftership-iOS-SDKTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aftership.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = xctest;
@@ -720,6 +723,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Aftership-iOS-SDK/Aftership-iOS-SDK-Prefix.pch";
 				INFOPLIST_FILE = "Aftership-iOS-SDKTests/Aftership-iOS-SDKTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aftership.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = xctest;

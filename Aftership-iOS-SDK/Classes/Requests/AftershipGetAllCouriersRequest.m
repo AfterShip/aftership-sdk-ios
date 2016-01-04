@@ -17,7 +17,7 @@
 @implementation AftershipGetAllCouriersRequest {
 
 }
-- (instancetype)initWithCompletionBlock:(void (^)(AftershipAbstractRequest *, NSArray *, NSError *))completionBlock {
+- (instancetype)initWithCompletionBlock:(void (^)(AftershipAbstractRequest *, AftershipGetCouriersResponse *, NSError *))completionBlock {
   self = [super init];
   if (self) {
     self.completionBlock = completionBlock;
@@ -26,7 +26,7 @@
   return self;
 }
 
-+ (instancetype)requestWithCompletionBlock:(void (^)(AftershipAbstractRequest *, NSArray *, NSError *))completionBlock {
++ (instancetype)requestWithCompletionBlock:(void (^)(AftershipAbstractRequest *, AftershipGetCouriersResponse *, NSError *))completionBlock {
   return [[self alloc] initWithCompletionBlock:completionBlock];
 }
 

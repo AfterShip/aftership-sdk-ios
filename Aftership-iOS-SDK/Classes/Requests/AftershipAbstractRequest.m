@@ -81,7 +81,7 @@
   __block NSError *error;
   __block BOOL hasMeta = NO;
   __block NSMutableArray *results = [NSMutableArray array];
-  [AftershipLogUtil log:mappingResult withTag:@"Mapping Results"];
+  [AftershipLogUtil log:(NSString *)mappingResult withTag:@"Mapping Results"];
   [mappingResult.array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
       //assuming there are two classes of object, Meta class and target object class
       if ([obj class] == [AftershipMeta class]) {
@@ -114,5 +114,9 @@
 
 }
 
+//virtual
+- (void)doExecuteWithManager:(RKObjectManager *)manager {
+    
+}
 
 @end

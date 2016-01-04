@@ -12,7 +12,7 @@
 
 }
 
-- (instancetype)initWithCompletionBlock:(void (^)(AftershipGetUserCouriersRequest *, NSArray *, NSError *))completionBlock {
+- (instancetype)initWithCompletionBlock:(void (^)(AftershipGetUserCouriersRequest *, AftershipGetCouriersResponse *, NSError *))completionBlock {
   self = [super init];
   if (self) {
     self.completionBlock = completionBlock;
@@ -21,7 +21,7 @@
   return self;
 }
 
-+ (instancetype)requestWithCompletionBlock:(void (^)(AftershipGetUserCouriersRequest *, NSArray *, NSError *))completionBlock {
++ (instancetype)requestWithCompletionBlock:(void (^)(AftershipGetUserCouriersRequest *, AftershipGetCouriersResponse *, NSError *))completionBlock {
   return [[self alloc] initWithCompletionBlock:completionBlock];
 }
 
