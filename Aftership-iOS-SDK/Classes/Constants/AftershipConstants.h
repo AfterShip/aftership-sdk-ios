@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 
 //sdk version
-static NSString *AFTERSHIP_IOS_SDK_VERSION = @"1.1.0";
+static NSString *AFTERSHIP_IOS_SDK_VERSION = @"1.1.2";
 
 //tracking tags
 static NSString *AftershipTrackingTagPending = @"Pending";
