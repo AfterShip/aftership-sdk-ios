@@ -12,13 +12,6 @@
 		16645D46198F79F4006F1F39 /* TrackingRequestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF0ADCF71435C8F1AA0C6 /* TrackingRequestsTests.m */; };
 		16645D47198F79F7006F1F39 /* LastCheckpointRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF9C0D03BC5431CF5E3D5 /* LastCheckpointRequestTest.m */; };
 		5FCA4A82026944DDB86EA35B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC14602013C4F17BC160B19 /* libPods.a */; };
-		C8CAF6C71C3DFD6E00107FF1 /* libRXPromise.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CAF6C61C3DFD6E00107FF1 /* libRXPromise.a */; };
-		C8CAF6C91C3DFD7200107FF1 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CAF6C81C3DFD7200107FF1 /* libRestKit.a */; };
-		C8CAF6CB1C3DFD7D00107FF1 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CAF6CA1C3DFD7D00107FF1 /* libAFNetworking.a */; };
-		C8CAF6CD1C3DFD8A00107FF1 /* libSOCKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CAF6CC1C3DFD8A00107FF1 /* libSOCKit.a */; };
-		C8CAF6CF1C3DFD8D00107FF1 /* libTransitionKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CAF6CE1C3DFD8D00107FF1 /* libTransitionKit.a */; };
-		C8CAF6D11C3DFD9B00107FF1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CAF6D01C3DFD9B00107FF1 /* MobileCoreServices.framework */; };
-		C8CAF6D31C3DFDAA00107FF1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CAF6D21C3DFDAA00107FF1 /* SystemConfiguration.framework */; };
 		FFABF0428E036B6B924F8545 /* AftershipError.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF0272B16871250382D05 /* AftershipError.m */; };
 		FFABF0BCCEB0EC90BF7014D8 /* AftershipRetrackTrackingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABFEE733E2A61F1F85A21A /* AftershipRetrackTrackingRequest.m */; };
 		FFABF0CE4A633EC09897A27B /* AftershipGetUserCouriersRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF717ED4D63F325684B58 /* AftershipGetUserCouriersRequest.m */; };
@@ -180,13 +173,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8CAF6D31C3DFDAA00107FF1 /* SystemConfiguration.framework in Frameworks */,
-				C8CAF6D11C3DFD9B00107FF1 /* MobileCoreServices.framework in Frameworks */,
-				C8CAF6CF1C3DFD8D00107FF1 /* libTransitionKit.a in Frameworks */,
-				C8CAF6CD1C3DFD8A00107FF1 /* libSOCKit.a in Frameworks */,
-				C8CAF6CB1C3DFD7D00107FF1 /* libAFNetworking.a in Frameworks */,
-				C8CAF6C91C3DFD7200107FF1 /* libRestKit.a in Frameworks */,
-				C8CAF6C71C3DFD6E00107FF1 /* libRXPromise.a in Frameworks */,
 				FFABFD9DE85B5A07F80B02F2 /* XCTest.framework in Frameworks */,
 				FFABF6BF92328A98E68B554F /* Foundation.framework in Frameworks */,
 				FFABF2DF54278A8B27A9962E /* UIKit.framework in Frameworks */,
@@ -551,7 +537,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${SRCROOT}/Podfile.lock\" \"${SRCROOT}/Pods/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -721,6 +707,7 @@
 		};
 		FFABF9C2621942BA4500943B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F04FD154479B99D9103BC427 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -754,6 +741,7 @@
 		};
 		FFABFEAA7DF4A8A6A320B9F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37A8C0CBA5861A773C570748 /* Pods.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

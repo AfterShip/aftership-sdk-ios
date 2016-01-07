@@ -5,7 +5,7 @@
 
 #import "AftershipClient.h"
 #import "AftershipGetAllCouriersRequest.h"
-#import "RKObjectManager.h"
+#import <RestKit/Network/RKObjectManager.h>
 
 @implementation AftershipClient {
 

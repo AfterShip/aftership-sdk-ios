@@ -4,9 +4,9 @@
 //
 
 #import "AftershipGetTrackingRequest.h"
-#import "RKObjectManager.h"
+#import <RestKit/Network/RKObjectManager.h>
 #import "AftershipTracking.h"
-#import "RKObjectParameterization.h"
+#import <RestKit/Network/RKObjectParameterization.h>
 
 
 @implementation AftershipGetTrackingRequest {
