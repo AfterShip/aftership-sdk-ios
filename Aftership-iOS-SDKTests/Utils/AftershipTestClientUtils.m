@@ -6,12 +6,13 @@
 #import "AftershipTestClientUtils.h"
 #import "AftershipClient.h"
 
+#import "AftershipApiKey.h"
 
 @implementation AftershipTestClientUtils
 
 +(AftershipClient *)client
 {
-  return [AftershipClient clientWithApiKey:@"YOUR-API-KEY"];
+  return [AftershipClient clientWithApiKey:AFTERSHIP_API_KEY];
 }
 
 @end

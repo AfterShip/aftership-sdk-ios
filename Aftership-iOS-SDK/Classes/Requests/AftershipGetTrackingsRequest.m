@@ -32,7 +32,7 @@
                                                                              keyPath:@"data"
                                                                          statusCodes:RKStatusCodeIndexSetForClass(
                                                                                  RKStatusCodeClassSuccessful)]];
-  [manager getObjectsAtPath:@"trackings" parameters:self.paramDict
+  [manager getObjectsAtPath:@"trackings" parameters:nil
                     success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
                         [self handleResult:mappingResult withError:nil];
 

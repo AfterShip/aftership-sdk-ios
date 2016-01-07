@@ -27,7 +27,7 @@
 
   //create a new tracking with notification
   AftershipTracking *newTracking = [AftershipTracking new];
-  newTracking.trackingNumber = [NSString stringWithFormat:@"%d", abs(arc4random())];
+  newTracking.trackingNumber = [NSString stringWithFormat:@"%@", @"1111111111"];
   newTracking.slug = @"dhl";
   newTracking.emails = @[@"123@123.com"];
 

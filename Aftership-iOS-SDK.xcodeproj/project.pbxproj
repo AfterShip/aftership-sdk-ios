@@ -74,6 +74,7 @@
 
 /* Begin PBXFileReference section */
 		37A8C0CBA5861A773C570748 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C852A5231C3E4E0700B49AFC /* AftershipApiKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AftershipApiKey.h; sourceTree = "<group>"; };
 		C8CAF6C61C3DFD6E00107FF1 /* libRXPromise.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRXPromise.a; path = "Pods/../build/Debug-iphoneos/libRXPromise.a"; sourceTree = "<group>"; };
 		C8CAF6C81C3DFD7200107FF1 /* libRestKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRestKit.a; path = "Pods/../build/Release-iphoneos/libRestKit.a"; sourceTree = "<group>"; };
 		C8CAF6CA1C3DFD7D00107FF1 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/libAFNetworking.a"; sourceTree = "<group>"; };
@@ -397,6 +398,7 @@
 			children = (
 				FFABF5B19C5CC06CF1B13C51 /* AftershipTestClientUtils.m */,
 				FFABF9AD215A1D4EB2D81EE0 /* AftershipTestClientUtils.h */,
+				C852A5231C3E4E0700B49AFC /* AftershipApiKey.h */,
 			);
 			path = Utils;
 			sourceTree = "<group>";

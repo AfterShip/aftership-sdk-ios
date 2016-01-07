@@ -43,7 +43,7 @@
 }
 - (void)doExecuteWithManager:(RKObjectManager *)manager {
 
-  [manager getObject:nil path:self.path parameters:self.paramDict
+  [manager getObject:nil path:self.path parameters:nil
                                            success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
                                                [self handleResult:mappingResult
                                                         withError:nil];

@@ -24,14 +24,14 @@
 
   //create a new tracking 1 with notification
   AftershipTracking *newTracking1 = [AftershipTracking new];
-  newTracking1.trackingNumber = [NSString stringWithFormat:@"%08d", abs(arc4random())];
+  newTracking1.trackingNumber = [NSString stringWithFormat:@"1111111111"];
   newTracking1.slug = @"dhl";
   newTracking1.emails = @[@"123@123.com"];
   newTracking1.title = @"new tracking 1";
 
   //create a new tracking 2 with notification
   AftershipTracking *newTracking2 = [AftershipTracking new];
-  newTracking2.trackingNumber = [NSString stringWithFormat:@"%08d", abs(arc4random())];
+  newTracking2.trackingNumber = [NSString stringWithFormat:@"2222222222"];
   newTracking2.slug = @"fedex";
   newTracking2.emails = @[@"123@123.com"];
   newTracking2.title = @"new tracking 2";
@@ -44,7 +44,7 @@
                       completionBlock:^(AftershipCreateTrackingRequest *request,
                               AftershipTracking *tracking,
                               NSError *error) {
-                          XCTAssertNil(error, "Create tracking 2 should success");
+                          XCTAssertNil(error, "Create tracking 1 should success");
                           [promise resolveWithResult:nil];
                       }];
   [self.client executeRequest:createTrackingRequest];
@@ -73,8 +73,8 @@
               XCTAssertNil(error, "Get trackings should success");
               XCTAssertTrue(response.count.intValue >= 2, "Should have at least 2 records");
               XCTAssertNotNil([(AftershipTracking *) response.trackings.firstObject title], "Should has title");
-              XCTAssertNil([(AftershipTracking *) response.trackings.firstObject trackingNumber],
-                           "Should not have tracking number");
+//              XCTAssertNil([(AftershipTracking *) response.trackings.firstObject trackingNumber],
+//                           "Should not have tracking number");
               [promise resolveWithResult:nil];
           }];
   [aftershipGetTrackingsRequest setFieldsWithArray:@[@"title"]];
@@ -129,7 +129,7 @@
   [self.client executeRequest:updateTrackingRequest];
   [self waitForPromise:promise];
 
-
+  // retrack tracking 1
   promise = [RXPromise new];
   AftershipRetrackTrackingRequest *aftershipRetrackTrackingRequest =
           [AftershipRetrackTrackingRequest requestWithTrackingNumber:newTracking1.trackingNumber
@@ -137,14 +137,27 @@
                                                      completionBlock:^(AftershipRetrackTrackingRequest *request,
                                                              AftershipTracking *tracking,
                                                              NSError *error) {
-                                                         XCTAssertNil(error,
+                                                         XCTAssertEqual(error.code, 4013,
                                                                          "Should have error when retrack tracking 1");
                                                          [promise resolveWithResult:nil];
                                                      }];
   [self.client executeRequest:aftershipRetrackTrackingRequest];
   [self waitForPromise:promise];
 
-
+    //delete tracking 1
+    promise = [RXPromise new];
+    AftershipDeleteTrackingRequest *aftershipDeleteTrackingRequest2 =
+    [AftershipDeleteTrackingRequest
+     requestWithTrackingNumber:newTracking1.trackingNumber
+     slug:newTracking1.slug
+     completionBlock:^(AftershipDeleteTrackingRequest *request,
+                       AftershipTracking *tracking,
+                       NSError *error) {
+         XCTAssertNil(error, "Delete tracking 1 should success");
+         [promise resolveWithResult:nil];
+     }];
+    [self.client executeRequest:aftershipDeleteTrackingRequest2];
+    [self waitForPromise:promise];
 }
 
 - (void)waitForPromise:(RXPromise *)promise {
