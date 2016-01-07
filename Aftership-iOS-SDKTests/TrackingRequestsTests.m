@@ -24,14 +24,14 @@
 
   //create a new tracking 1 with notification
   AftershipTracking *newTracking1 = [AftershipTracking new];
-  newTracking1.trackingNumber = [NSString stringWithFormat:@"%d", abs(arc4random())];
+  newTracking1.trackingNumber = [NSString stringWithFormat:@"%08d", (arc4random())];
   newTracking1.slug = @"dhl";
   newTracking1.emails = @[@"123@123.com"];
   newTracking1.title = @"new tracking 1";
 
   //create a new tracking 2 with notification
   AftershipTracking *newTracking2 = [AftershipTracking new];
-  newTracking2.trackingNumber = [NSString stringWithFormat:@"%d", abs(arc4random())];
+  newTracking2.trackingNumber = [NSString stringWithFormat:@"%08d", (arc4random())];
   newTracking2.slug = @"fedex";
   newTracking2.emails = @[@"123@123.com"];
   newTracking2.title = @"new tracking 2";

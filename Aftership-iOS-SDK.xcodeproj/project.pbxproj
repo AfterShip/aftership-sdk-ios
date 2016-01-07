@@ -12,6 +12,13 @@
 		16645D46198F79F4006F1F39 /* TrackingRequestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF0ADCF71435C8F1AA0C6 /* TrackingRequestsTests.m */; };
 		16645D47198F79F7006F1F39 /* LastCheckpointRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF9C0D03BC5431CF5E3D5 /* LastCheckpointRequestTest.m */; };
 		5FCA4A82026944DDB86EA35B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC14602013C4F17BC160B19 /* libPods.a */; };
+		C8CAF6C71C3DFD6E00107FF1 /* libRXPromise.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CAF6C61C3DFD6E00107FF1 /* libRXPromise.a */; };
+		C8CAF6C91C3DFD7200107FF1 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CAF6C81C3DFD7200107FF1 /* libRestKit.a */; };
+		C8CAF6CB1C3DFD7D00107FF1 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CAF6CA1C3DFD7D00107FF1 /* libAFNetworking.a */; };
+		C8CAF6CD1C3DFD8A00107FF1 /* libSOCKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CAF6CC1C3DFD8A00107FF1 /* libSOCKit.a */; };
+		C8CAF6CF1C3DFD8D00107FF1 /* libTransitionKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CAF6CE1C3DFD8D00107FF1 /* libTransitionKit.a */; };
+		C8CAF6D11C3DFD9B00107FF1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CAF6D01C3DFD9B00107FF1 /* MobileCoreServices.framework */; };
+		C8CAF6D31C3DFDAA00107FF1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CAF6D21C3DFDAA00107FF1 /* SystemConfiguration.framework */; };
 		FFABF0428E036B6B924F8545 /* AftershipError.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF0272B16871250382D05 /* AftershipError.m */; };
 		FFABF0BCCEB0EC90BF7014D8 /* AftershipRetrackTrackingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABFEE733E2A61F1F85A21A /* AftershipRetrackTrackingRequest.m */; };
 		FFABF0CE4A633EC09897A27B /* AftershipGetUserCouriersRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF717ED4D63F325684B58 /* AftershipGetUserCouriersRequest.m */; };
@@ -74,6 +81,13 @@
 
 /* Begin PBXFileReference section */
 		37A8C0CBA5861A773C570748 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C8CAF6C61C3DFD6E00107FF1 /* libRXPromise.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRXPromise.a; path = "Pods/../build/Debug-iphoneos/libRXPromise.a"; sourceTree = "<group>"; };
+		C8CAF6C81C3DFD7200107FF1 /* libRestKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRestKit.a; path = "Pods/../build/Release-iphoneos/libRestKit.a"; sourceTree = "<group>"; };
+		C8CAF6CA1C3DFD7D00107FF1 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/libAFNetworking.a"; sourceTree = "<group>"; };
+		C8CAF6CC1C3DFD8A00107FF1 /* libSOCKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSOCKit.a; path = "Pods/../build/Debug-iphoneos/libSOCKit.a"; sourceTree = "<group>"; };
+		C8CAF6CE1C3DFD8D00107FF1 /* libTransitionKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTransitionKit.a; path = "Pods/../build/Release-iphoneos/libTransitionKit.a"; sourceTree = "<group>"; };
+		C8CAF6D01C3DFD9B00107FF1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C8CAF6D21C3DFDAA00107FF1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EFC14602013C4F17BC160B19 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04FD154479B99D9103BC427 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FFABF00285A571655D954DA7 /* AftershipTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipTracking.m; sourceTree = "<group>"; };
@@ -166,6 +180,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8CAF6D31C3DFDAA00107FF1 /* SystemConfiguration.framework in Frameworks */,
+				C8CAF6D11C3DFD9B00107FF1 /* MobileCoreServices.framework in Frameworks */,
+				C8CAF6CF1C3DFD8D00107FF1 /* libTransitionKit.a in Frameworks */,
+				C8CAF6CD1C3DFD8A00107FF1 /* libSOCKit.a in Frameworks */,
+				C8CAF6CB1C3DFD7D00107FF1 /* libAFNetworking.a in Frameworks */,
+				C8CAF6C91C3DFD7200107FF1 /* libRestKit.a in Frameworks */,
+				C8CAF6C71C3DFD6E00107FF1 /* libRXPromise.a in Frameworks */,
 				FFABFD9DE85B5A07F80B02F2 /* XCTest.framework in Frameworks */,
 				FFABF6BF92328A98E68B554F /* Foundation.framework in Frameworks */,
 				FFABF2DF54278A8B27A9962E /* UIKit.framework in Frameworks */,
@@ -188,6 +209,13 @@
 		FFABF19DEB428E8B2F9191E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C8CAF6D21C3DFDAA00107FF1 /* SystemConfiguration.framework */,
+				C8CAF6D01C3DFD9B00107FF1 /* MobileCoreServices.framework */,
+				C8CAF6CE1C3DFD8D00107FF1 /* libTransitionKit.a */,
+				C8CAF6CC1C3DFD8A00107FF1 /* libSOCKit.a */,
+				C8CAF6CA1C3DFD7D00107FF1 /* libAFNetworking.a */,
+				C8CAF6C81C3DFD7200107FF1 /* libRestKit.a */,
+				C8CAF6C61C3DFD6E00107FF1 /* libRXPromise.a */,
 				FFABF4221888B5030E10329E /* Foundation.framework */,
 				FFABFB3FB540699BFDCA04C6 /* XCTest.framework */,
 				FFABFD1C5DDDC4C3FFC9EBBC /* UIKit.framework */,
@@ -494,8 +522,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 		};
 		E89B46DD0D2446248722A874 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -633,6 +660,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -663,6 +694,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -675,7 +710,10 @@
 				DSTROOT = /tmp/Aftership_iOS_SDK.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Aftership-iOS-SDK/Aftership-iOS-SDK-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -691,6 +729,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Aftership-iOS-SDK/Aftership-iOS-SDK-Prefix.pch";
 				INFOPLIST_FILE = "Aftership-iOS-SDKTests/Aftership-iOS-SDKTests-Info.plist";
+				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = xctest;
@@ -704,7 +743,10 @@
 				DSTROOT = /tmp/Aftership_iOS_SDK.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Aftership-iOS-SDK/Aftership-iOS-SDK-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -720,6 +762,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Aftership-iOS-SDK/Aftership-iOS-SDK-Prefix.pch";
 				INFOPLIST_FILE = "Aftership-iOS-SDKTests/Aftership-iOS-SDKTests-Info.plist";
+				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = xctest;
