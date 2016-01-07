@@ -43,7 +43,11 @@
 }
 - (void)doExecuteWithManager:(RKObjectManager *)manager {
 
-  [manager getObject:nil path:self.path parameters:nil
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:self.paramDict];
+    NSArray *keysForNullValues = [dict allKeysForObject:[NSNull null]];
+    [dict removeObjectsForKeys:keysForNullValues];
+    
+  [manager getObject:nil path:self.path parameters:dict
                                            success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
                                                [self handleResult:mappingResult
                                                         withError:nil];

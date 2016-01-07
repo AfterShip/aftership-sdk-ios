@@ -50,16 +50,21 @@
 
   NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:self.requiredFields];
   [params addEntriesFromDictionary:self.paramDict];
+
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:params];
+    NSArray *keysForNullValues = [dict allKeysForObject:[NSNull null]];
+    [dict removeObjectsForKeys:keysForNullValues];
+    
   [manager getObject:nil
                 path:self.path
-          parameters:params
+          parameters:dict
              success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+                 
                  [self handleResult:mappingResult withError:nil];
              }
              failure:^(RKObjectRequestOperation *operation, NSError *error) {
                  [self handleResult:nil withError:error];
              }];
-
 }
 
 - (NSDictionary *)paramDict {

@@ -32,8 +32,14 @@
                                                                              keyPath:@"data"
                                                                          statusCodes:RKStatusCodeIndexSetForClass(
                                                                                  RKStatusCodeClassSuccessful)]];
-  [manager getObjectsAtPath:@"trackings" parameters:nil
+
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:self.paramDict];
+    NSArray *keysForNullValues = [dict allKeysForObject:[NSNull null]];
+    [dict removeObjectsForKeys:keysForNullValues];
+    
+  [manager getObjectsAtPath:@"trackings" parameters:dict
                     success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+                        
                         [self handleResult:mappingResult withError:nil];
 
                     } failure:^(RKObjectRequestOperation *operation, NSError *error) {

@@ -36,10 +36,14 @@
                                                                                                             keyPath:@"data"
                                                                                                         statusCodes:RKStatusCodeIndexSetForClass(
                                                                                                                 RKStatusCodeClassSuccessful)]];
+    
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:self.paramDict];
+    NSArray *keysForNullValues = [dict allKeysForObject:[NSNull null]];
+    [dict removeObjectsForKeys:keysForNullValues];
 
   [manager getObject:nil
                 path:[NSString stringWithFormat:@"%@/%@/%@",@"last_checkpoint",self.slug,self.trackingNumber]
-          parameters:self.paramDict
+          parameters:dict
              success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
                  [self handleResult:mappingResult withError:nil];
              }

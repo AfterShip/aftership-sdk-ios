@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Aftership-iOS-SDK"
-  s.version      = "1.1.3"
+  s.version      = "1.1.4"
   s.summary      = "The iOS SDK of AfterShip API"
 
   s.description  = <<-DESC
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/AfterShip/aftership-sdk-ios.git", :tag => "1.1.3" }
+  s.source       = { :git => "https://github.com/AfterShip/aftership-sdk-ios.git", :tag => "1.1.4" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

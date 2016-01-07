@@ -27,7 +27,7 @@
 
   //create a new tracking with notification
   AftershipTracking *newTracking = [AftershipTracking new];
-  newTracking.trackingNumber = [NSString stringWithFormat:@"%@", @"1111111111"];
+  newTracking.trackingNumber = [NSString stringWithFormat:@"%@", @"3333333333"];
   newTracking.slug = @"dhl";
   newTracking.emails = @[@"123@123.com"];
 
@@ -53,6 +53,7 @@
                             completionBlock:^(AftershipGetNotificationsRequest *request,
                                     AftershipNotification *notification,
                                     NSError *error) {
+
                                 XCTAssertNil(error, "Get notification should success");
                                 XCTAssertTrue(
                                         [(NSString *) notification.emails.firstObject isEqualToString:newTracking.emails.firstObject],
