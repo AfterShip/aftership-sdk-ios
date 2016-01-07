@@ -13,7 +13,7 @@ The recommended approach for installing Aftership iOS SDK is via the [CocoaPods]
 ### via CocoaPods
 
 ``` 
-pod 'Aftership-iOS-SDK', '~> 1.1.2'
+pod 'Aftership-iOS-SDK', '~> 1.1.3'
 ```
 
 ### via source code
