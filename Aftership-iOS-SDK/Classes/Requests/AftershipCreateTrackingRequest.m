@@ -45,8 +45,10 @@
 
 - (void)doExecuteWithManager:(RKObjectManager *)manager {
 
-
-  [manager addRequestDescriptor:[RKRequestDescriptor requestDescriptorWithMapping:[[[AftershipTracking class] responseMapping] inverseMapping]
+  RKObjectMapping* mapping = [[[AftershipTracking class] responseMapping] inverseMapping];
+  mapping.assignsDefaultValueForMissingAttributes = NO;
+    
+  [manager addRequestDescriptor:[RKRequestDescriptor requestDescriptorWithMapping:mapping
                                                                       objectClass:[AftershipTracking class]
                                                                       rootKeyPath:@"tracking"
                                                                            method:RKRequestMethodPOST]];

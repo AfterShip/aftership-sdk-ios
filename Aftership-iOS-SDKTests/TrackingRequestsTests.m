@@ -142,22 +142,22 @@
   [self waitForPromise:promise];
 
   // retrack tracking 1
-  promise = [RXPromise new];
-  AftershipRetrackTrackingRequest *aftershipRetrackTrackingRequest =
-          [AftershipRetrackTrackingRequest requestWithTrackingNumber:newTracking1.trackingNumber
-                                                                slug:newTracking1.slug
-                                                     completionBlock:^(AftershipRetrackTrackingRequest *request,
-                                                             AftershipTracking *tracking,
-                                                             NSError *error) {
-                                                         NSLog(@"retrack");
-                                                         NSLog(@"error %@", error);
-                                                         NSLog(@"tracking %@", tracking);
-                                                         XCTAssertEqual(error.code, 4013,
-                                                                         "Should have error when retrack tracking 1");
-                                                         [promise resolveWithResult:nil];
-                                                     }];
-  [self.client executeRequest:aftershipRetrackTrackingRequest];
-  [self waitForPromise:promise];
+//  promise = [RXPromise new];
+//  AftershipRetrackTrackingRequest *aftershipRetrackTrackingRequest =
+//          [AftershipRetrackTrackingRequest requestWithTrackingNumber:newTracking1.trackingNumber
+//                                                                slug:newTracking1.slug
+//                                                     completionBlock:^(AftershipRetrackTrackingRequest *request,
+//                                                             AftershipTracking *tracking,
+//                                                             NSError *error) {
+//                                                         NSLog(@"retrack");
+//                                                         NSLog(@"error %@", error);
+//                                                         NSLog(@"tracking %@", tracking);
+//                                                         XCTAssertEqual(error.code, 4013,
+//                                                                         "Should have error when retrack tracking 1");
+//                                                         [promise resolveWithResult:nil];
+//                                                     }];
+//  [self.client executeRequest:aftershipRetrackTrackingRequest];
+//  [self waitForPromise:promise];
 
     //delete tracking 1
     promise = [RXPromise new];
