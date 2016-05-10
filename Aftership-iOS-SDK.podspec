@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Aftership-iOS-SDK"
-  s.version      = "1.1.5"
+  s.version      = "1.1.6"
   s.summary      = "The iOS SDK of AfterShip API"
 
   s.description  = <<-DESC
