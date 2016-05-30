@@ -46,3 +46,61 @@ AftershipGetAllCouriersRequest *request = [AftershipGetAllCouriersRequest reques
   
 ```
 
+### Tracking
+
+#### Create tracking
+
+```obj-c
+    AftershipTracking *newTracking = [[AftershipTracking alloc] init];
+    newTracking.trackingNumber = [NSString stringWithFormat:@"1111111111"];
+    newTracking.slug = @"dhl";
+    newTracking.emails = @[@"123@123.com"];
+    newTracking.title = @"new tracking 1";
+    AftershipCreateTrackingRequest *request = [AftershipCreateTrackingRequest requestWithTracking:newTracking completionBlock:^(AftershipCreateTrackingRequest *request, AftershipTracking *tracking, NSError *error) {
+        if (error) {
+            NSLog(@"%@", error);
+        } else {
+            NSLog(@"%@", tracking);
+        }
+    }];
+    [client executeRequest:request];
+```
+
+#### Get tracking
+
+```obj-c
+    AftershipGetTrackingRequest *request = [AftershipGetTrackingRequest requestWithTrackingNumber:@"1111111111" slug:@"dhl" completionBlock:^(AftershipGetTrackingRequest *request, AftershipTracking *tracking, NSError *error) {
+        if (error) {
+            NSLog(@"%@", error);
+        } else {
+            NSLog(@"%@", tracking);
+        }
+    }];
+    [client executeRequest:request];
+```
+
+#### Get trackings
+
+```obj-c
+    AftershipGetTrackingsRequest *request = [AftershipGetTrackingsRequest requestWithCompletionBlock:^(AftershipGetTrackingsRequest *request, AftershipGetTrackingsResponse *response, NSError *error) {
+        if (error) {
+            NSLog(@"%@", error);
+        } else {
+            NSLog(@"%@", response.trackings);
+        }
+    }];
+    [client executeRequest:request];
+```
+
+#### Delete tracking
+
+```obj-c
+    AftershipDeleteTrackingRequest *request = [AftershipDeleteTrackingRequest requestWithTrackingNumber:@"1111111111" slug:@"dhl" completionBlock:^(AftershipDeleteTrackingRequest *request, AftershipTracking *tracking, NSError *error) {
+        if (error) {
+            NSLog(@"%@", error);
+        } else {
+            NSLog(@"%@", tracking);
+        }
+    }];
+    [client executeRequest:request];
+```
