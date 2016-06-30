@@ -11,6 +11,7 @@
 @property (nonatomic, strong) NSDate* createTime;
 @property (nonatomic, strong) NSString* slug;
 @property (nonatomic, strong) NSString* checkpointTime;
+@property (nonatomic, strong) NSString* location;
 @property (nonatomic, strong) NSString* city;
 @property (nonatomic, strong) NSString* state;
 @property (nonatomic, strong) NSString* countryCode;

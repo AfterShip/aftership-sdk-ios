@@ -16,6 +16,7 @@
           @"created_at" : @"createTime",
           @"slug" : @"slug",
           @"checkpoint_time" : @"checkpointTime",
+          @"location" : @"location",
           @"city" : @"city",
           @"country_iso3" : @"countryCode",
           @"country_name" : @"countryName",
@@ -32,6 +33,7 @@
   [description appendFormat:@"self.createTime=%@", self.createTime];
   [description appendFormat:@", self.slug=%@", self.slug];
   [description appendFormat:@", self.checkpointTime=%@", self.checkpointTime];
+  [description appendFormat:@", self.location=%@", self.location];
   [description appendFormat:@", self.city=%@", self.city];
   [description appendFormat:@", self.state=%@", self.state];
   [description appendFormat:@", self.countryCode=%@", self.countryCode];
