@@ -35,4 +35,24 @@
   return description;
 }
 
+-(NSUInteger)hash{
+  return self.description.hash;
+}
+
+-(BOOL)isEqual:(id)object{
+  
+  if (self == object) {
+    return YES;
+  }
+  
+  if (![object isKindOfClass:[self class]]) {
+    return NO;
+  }
+  
+  AftershipGetTrackingsResponse *castedObject = (AftershipGetTrackingsResponse *)object;
+  return castedObject.description == self.description;
+  
+}
+
+
 @end

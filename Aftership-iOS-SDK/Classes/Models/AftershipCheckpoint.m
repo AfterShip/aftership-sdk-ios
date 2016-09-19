@@ -45,4 +45,24 @@
   return description;
 }
 
+-(NSUInteger)hash{
+  return self.description.hash;
+}
+
+-(BOOL)isEqual:(id)object{
+  
+  if (self == object) {
+    return YES;
+  }
+  
+  if (![object isKindOfClass:[self class]]) {
+    return NO;
+  }
+  
+  AftershipCheckpoint *castedObject = (AftershipCheckpoint *)object;
+  return castedObject.description == self.description;
+  
+}
+
+
 @end
