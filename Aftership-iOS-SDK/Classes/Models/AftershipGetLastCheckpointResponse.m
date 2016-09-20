@@ -48,7 +48,7 @@
   }
   
   AftershipGetLastCheckpointResponse *castedObject = (AftershipGetLastCheckpointResponse *)object;
-  return castedObject.description == self.description;
+  return [castedObject.description isEqualToString: self.description];
   
 }
 
