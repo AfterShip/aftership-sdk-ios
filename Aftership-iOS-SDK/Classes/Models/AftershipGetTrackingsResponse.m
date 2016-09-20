@@ -50,7 +50,7 @@
   }
   
   AftershipGetTrackingsResponse *castedObject = (AftershipGetTrackingsResponse *)object;
-  return [castedObject.description isEqualToString: self.description];
+  return castedObject.hash == self.hash;
   
 }
 

@@ -46,7 +46,7 @@
   }
   
   AftershipGetCouriersResponse *castedObject = (AftershipGetCouriersResponse *)object;
-  return [castedObject.description isEqualToString: self.description];
+  return castedObject.hash == self.hash;
   
 }
 
