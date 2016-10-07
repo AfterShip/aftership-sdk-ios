@@ -69,6 +69,7 @@
   promise = [RXPromise new];
   AftershipNotification *notification = [AftershipNotification new];
   notification.emails = newTracking.emails;
+	
   AftershipRemoveNotificationRequest *aftershipRemoveNotificationRequest =
           [AftershipRemoveNotificationRequest
                   requestWithTrackingNumber:newTracking.trackingNumber
@@ -107,12 +108,15 @@
 
   //add email
   promise = [RXPromise new];
-
+	
+  AftershipNotification *addNotification = [AftershipNotification new];
+  addNotification.emails = newTracking.emails;
+	
   AftershipAddNotificationRequest *addNotificationRequest =
           [AftershipAddNotificationRequest
                   requestWithTrackingNumber:newTracking.trackingNumber
                                        slug:newTracking.slug
-                           withNotification:notification
+                           withNotification:addNotification
                             completionBlock:^(AftershipAddNotificationRequest *request,
                                     AftershipNotification *notification,
                                     NSError *error) {
