@@ -4,13 +4,13 @@
 //
 
 #import "AftershipAbstractRequest.h"
-#import <RestKit/Network/RKObjectRequestOperation.h>
+#import "RKObjectRequestOperation.h"
 #import "AftershipMeta.h"
-#import <RestKit/Support/RKLog.h>
+#import "RKLog.h"
 #import "AftershipCourier.h"
-#import <RestKit/Network/RKResponseDescriptor.h>
-#import <RestKit/Network/RKObjectManager.h>
-#import <RestKit/ObjectMapping/RKMappingResult.h>
+#import "RKResponseDescriptor.h"
+#import "RKObjectManager.h"
+#import "RKMappingResult.h"
 #import "AftershipError.h"
 #import "AftershipLogUtil.h"
 

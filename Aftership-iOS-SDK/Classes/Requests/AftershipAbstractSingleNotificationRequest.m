@@ -4,8 +4,8 @@
 //
 
 
-#import <RestKit/ObjectMapping/RKHTTPUtilities.h>
-#import <RestKit/Network/RKResponseDescriptor.h>
+#import "RKHTTPUtilities.h"
+#import "RKResponseDescriptor.h"
 #import "AftershipAbstractSingleNotificationRequest.h"
 #import "AftershipNotification.h"
 #import "AftershipGetLastCheckpointResponse.h"

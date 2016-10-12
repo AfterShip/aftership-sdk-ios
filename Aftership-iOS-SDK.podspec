@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Aftership-iOS-SDK"
-  s.version      = "1.1.8"
+  s.version      = "1.1.9"
   s.summary      = "The iOS SDK of AfterShip API"
 
   s.description  = <<-DESC
@@ -53,10 +53,8 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Feiko Lai@AfterShip Ltd." => "dg3feiko@gmail.com" }
-  # Or just: s.author    = "AfterShip Ltd."
-  # s.authors            = { "AfterShip Ltd." => "support@aftership.com" }
-  # s.social_media_url   = "http://twitter.com/AfterShip Ltd."
+  s.authors            = { "AfterShip Ltd." => "support@aftership.com" }
+  s.social_media_url   = "http://twitter.com/aftership"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -78,7 +76,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/AfterShip/aftership-sdk-ios.git", :tag => "1.1.8" }
+  s.source       = { :git => "https://github.com/AfterShip/aftership-sdk-ios.git", :tag => "1.1.9" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -115,12 +113,6 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
-
-  # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
-
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -129,8 +121,5 @@ Pod::Spec.new do |s|
   #  you can include multiple dependencies to ensure it works.
 
    s.requires_arc = true
-
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-   s.dependency 'RestKit', '~> 0.26.0'
 
 end

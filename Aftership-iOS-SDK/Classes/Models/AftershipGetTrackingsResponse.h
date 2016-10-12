@@ -4,7 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <RestKit/RestKit.h>
+#import "RestKit.h"
 
 @interface AftershipGetTrackingsResponse : NSObject
 @property (nonatomic, strong) NSNumber* limit;
