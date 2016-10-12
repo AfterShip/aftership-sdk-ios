@@ -4,6 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RestKit.h"
 
 @class RKObjectMapping;
 
