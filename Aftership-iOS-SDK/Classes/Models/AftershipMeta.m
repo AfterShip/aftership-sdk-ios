@@ -4,6 +4,7 @@
 //
 
 #import "AftershipMeta.h"
+#import "RestKit.h"
 
 
 

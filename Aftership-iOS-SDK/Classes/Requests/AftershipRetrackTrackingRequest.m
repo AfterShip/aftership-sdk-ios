@@ -4,6 +4,7 @@
 //
 
 #import "AftershipRetrackTrackingRequest.h"
+#import "RestKit.h"
 
 
 @implementation AftershipRetrackTrackingRequest {
