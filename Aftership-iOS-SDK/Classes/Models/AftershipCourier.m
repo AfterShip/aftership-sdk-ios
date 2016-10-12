@@ -4,6 +4,7 @@
 //
 
 #import "AftershipCourier.h"
+#import "RestKit.h"
 
 
 @implementation AftershipCourier {

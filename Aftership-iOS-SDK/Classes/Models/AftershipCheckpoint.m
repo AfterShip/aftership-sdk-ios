@@ -4,6 +4,7 @@
 //
 
 #import "AftershipCheckpoint.h"
+#import "RestKit.h"
 
 
 @implementation AftershipCheckpoint {
