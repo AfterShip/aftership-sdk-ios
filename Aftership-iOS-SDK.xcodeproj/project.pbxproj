@@ -222,6 +222,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C801F4421DADE3CF00CA8CBF /* libAftership-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libAftership-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C801F4431DADE3CF00CA8CBF /* Aftership-iOS-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aftership-iOS-SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8CAF6D01C3DFD9B00107FF1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		C8CAF6D21C3DFDAA00107FF1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F95372AC1DA73D910016C943 /* RKLumberjackLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKLumberjackLogger.h; sourceTree = "<group>"; };
@@ -461,13 +463,11 @@
 		FFABF5B19C5CC06CF1B13C51 /* AftershipTestClientUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipTestClientUtils.m; sourceTree = "<group>"; };
 		FFABF5FD0073F0154023437D /* AftershipGetTrackingsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipGetTrackingsResponse.h; sourceTree = "<group>"; };
 		FFABF616BE7FE519B7228EF6 /* AftershipAbstractSingleObjectOperationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipAbstractSingleObjectOperationRequest.m; sourceTree = "<group>"; };
-		FFABF661E416CBB6B41AADA1 /* libAftership-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libAftership-iOS-SDK.a"; path = "/Users/kelvinleung/Repository/aftership-sdk-ios/build/Debug-iphoneos/libAftership-iOS-SDK.a"; sourceTree = "<absolute>"; };
 		FFABF6EE1CDB7075F56EFA7E /* AftershipGetNotificationsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipGetNotificationsRequest.h; sourceTree = "<group>"; };
 		FFABF6F0046FC81B28C48AFD /* AftershipAbstractSingleTrackingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipAbstractSingleTrackingRequest.h; sourceTree = "<group>"; };
 		FFABF717ED4D63F325684B58 /* AftershipGetUserCouriersRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipGetUserCouriersRequest.m; sourceTree = "<group>"; };
 		FFABF73B3C4192E53F224250 /* AftershipMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipMeta.h; sourceTree = "<group>"; };
 		FFABF77CFBA1E9057618473B /* AftershipUpdateTrackingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipUpdateTrackingRequest.m; sourceTree = "<group>"; };
-		FFABF834320F55F79F2C2270 /* Aftership-iOS-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Aftership-iOS-SDKTests.xctest"; path = "/Users/kelvinleung/Repository/aftership-sdk-ios/build/Debug-iphoneos/Aftership-iOS-SDKTests.xctest"; sourceTree = "<absolute>"; };
 		FFABF863CD5F79103F662B99 /* AftershipNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipNotification.h; sourceTree = "<group>"; };
 		FFABF890F9E7490AF5B7B2F8 /* AftershipAbstractMultipleObjectsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipAbstractMultipleObjectsRequest.m; sourceTree = "<group>"; };
 		FFABF8CB378F5CA6B7DB9C22 /* AftershipDeleteTrackingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipDeleteTrackingRequest.h; sourceTree = "<group>"; };
@@ -1024,6 +1024,8 @@
 				FFABF96EE1D48891FB408FFD /* Aftership-iOS-SDK */,
 				FFABF28BA57EE8C81D2E8A60 /* Aftership-iOS-SDKTests */,
 				FFABF516E8D949ADCDCB72DB /* Aftership-iOS-SDKDemo */,
+				C801F4421DADE3CF00CA8CBF /* libAftership-iOS-SDK.a */,
+				C801F4431DADE3CF00CA8CBF /* Aftership-iOS-SDKTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1062,7 +1064,7 @@
 			);
 			name = "Aftership-iOS-SDK";
 			productName = "Aftership-iOS-SDK";
-			productReference = FFABF661E416CBB6B41AADA1 /* libAftership-iOS-SDK.a */;
+			productReference = C801F4421DADE3CF00CA8CBF /* libAftership-iOS-SDK.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		FFABFAE3936760E5652FEE07 /* Aftership-iOS-SDKTests */ = {
@@ -1080,7 +1082,7 @@
 			);
 			name = "Aftership-iOS-SDKTests";
 			productName = "Aftership-iOS-SDKTests";
-			productReference = FFABF834320F55F79F2C2270 /* Aftership-iOS-SDKTests.xctest */;
+			productReference = C801F4431DADE3CF00CA8CBF /* Aftership-iOS-SDKTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -1431,6 +1433,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = Release;
 		};
@@ -1457,12 +1460,14 @@
 				DSTROOT = /tmp/Aftership_iOS_SDK.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Aftership-iOS-SDK/Aftership-iOS-SDK-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-lc++",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = Debug;
 		};
