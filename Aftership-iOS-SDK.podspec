@@ -86,7 +86,7 @@ Pod::Spec.new do |s|
   #  files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-  s.prefix_header_contents = '#import "RestKit.h"'
+  #s.prefix_header_contents = '#import "RestKit.h"'
   s.source_files  = "Classes", "Aftership-iOS-SDK/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
