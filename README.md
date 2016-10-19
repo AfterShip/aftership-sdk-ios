@@ -12,8 +12,8 @@ The recommended approach for installing Aftership iOS SDK is via the [CocoaPods]
 
 ### via CocoaPods
 
-``` 
-pod 'Aftership-iOS-SDK', '~> 1.1.7'
+```
+pod 'Aftership-iOS-SDK', '~> 1.1.9'
 ```
 
 ### via source code
@@ -43,7 +43,7 @@ AftershipGetAllCouriersRequest *request = [AftershipGetAllCouriersRequest reques
       }      
   }];
 [client executeRequest:request];
-  
+
 ```
 
 ### Tracking
