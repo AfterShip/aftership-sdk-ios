@@ -189,7 +189,7 @@ NSArray * AFRKQueryStringPairsFromKeyAndValue(NSString *key, id value) {
 @interface AFRKHTTPClient ()
 @property (readwrite, nonatomic, strong) NSURL *baseURL;
 @property (readwrite, nonatomic, strong) NSMutableArray *registeredHTTPOperationClassNames;
-//@property (readwrite, nonatomic, strong) NSMutableDictionary *defaultHeaders;
+@property (readwrite, nonatomic, strong) NSMutableDictionary *defaultHeaders;
 @property (readwrite, nonatomic, strong) NSURLCredential *defaultCredential;
 @property (readwrite, nonatomic, strong) NSOperationQueue *operationQueue;
 #ifdef _SYSTEMCONFIGURATION_H
