@@ -5,6 +5,9 @@ Aftership iOS SDK
 
 **Compatible with Aftership API v4**
 
+## This project is looking for maintainers
+
+If you would like to be a maintainer of this project, please reach out through our public slack channel [Slack AfterShip-SDKs](https://aftership-sdk-slackin.herokuapp.com/) to express your interest. Thanks in advance for your help!
 
 ## Installation
 
